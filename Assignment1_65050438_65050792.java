@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.*;
+import java.util.Queue;
 
 public class Assignment1_65050438_65050792 extends JPanel {
     public static void main(String[] args) {
@@ -17,6 +18,15 @@ public class Assignment1_65050438_65050792 extends JPanel {
     }
     
     public void paintComponent(Graphics g) {
+        BufferedImage buffer = new BufferedImage(601, 601, BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g2 = buffer.createGraphics();
+
+        g2.setColor(Color.WHITE);
+        g2.fillRect(0, 0, 600, 600);
+
+        g2.setColor(Color.BLACK);
+        bezierCurve(g2, 230, 80, 175, 125, 203, 187, 216, 195);
+        g.drawImage(buffer, 0, 0, null);
     }
 
     private void plot(Graphics g, int x, int y , int size) {
