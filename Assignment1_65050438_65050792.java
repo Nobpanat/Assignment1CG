@@ -27,6 +27,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
         g2.setColor(Color.BLACK);
         bezierCurve(g2, 230, 80, 175, 125, 203, 187, 216, 195);
         g.drawImage(buffer, 0, 0, null);
+        //test
     }
 
     private void plot(Graphics g, int x, int y , int size) {
