@@ -2,6 +2,8 @@ package Assignment1CG;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.util.*;
 
 public class Assignment1_65050438_65050792 extends JPanel {
     public static void main(String[] args) {
@@ -15,7 +17,6 @@ public class Assignment1_65050438_65050792 extends JPanel {
     }
     
     public void paintComponent(Graphics g) {
-        
     }
 
     private void plot(Graphics g, int x, int y , int size) {
@@ -82,6 +83,52 @@ public class Assignment1_65050438_65050792 extends JPanel {
             plot(g, x, y, 1);
         }
     }
+
+    // ลงสี
+    public BufferedImage floodFill(BufferedImage m, int x, int y, Color target_colour, Color replacement_colour) {
+        Graphics2D g2 = m.createGraphics();
+        Queue<Point> q = new LinkedList<>();
+
+        if (m.getRGB(x, y) == target_colour.getRGB()) {
+            g2.setColor(replacement_colour);
+            plot(g2, x, y, 1);
+            q.add(new Point(x, y));
+        }
+
+        while (!q.isEmpty()) {
+            Point p = q.poll();
+
+            // south
+            if (p.y < 600 && m.getRGB(p.x, p.y + 1) == target_colour.getRGB()) {
+                g2.setColor(replacement_colour);
+                plot(g2, p.x, p.y + 1, 1);
+                q.add(new Point(p.x, p.y + 1));
+            }
+
+            // north
+            if (p.y > 0 && m.getRGB(p.x, p.y - 1) == target_colour.getRGB()) {
+                g2.setColor(replacement_colour);
+                plot(g2, p.x, p.y - 1, 1);
+                q.add(new Point(p.x, p.y - 1));
+            }
+
+            // east
+            if (p.x < 600 && m.getRGB(p.x + 1, p.y) == target_colour.getRGB()) {
+                g2.setColor(replacement_colour);
+                plot(g2, p.x + 1, p.y, 1);
+                q.add(new Point(p.x + 1, p.y));
+            }
+
+            // west
+            if (p.x > 0 && m.getRGB(p.x - 1, p.y) == target_colour.getRGB()) {
+                g2.setColor(replacement_colour);
+                plot(g2, p.x - 1, p.y, 1);
+                q.add(new Point(p.x - 1, p.y));
+            }
+        }
+        return m;
+    }
+       
 
     
 }
