@@ -339,10 +339,6 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 229, 469, 231, 446, 218, 456);
         bresenhamLine(g2, 218, 456, 215, 459);
 
-        // Shadow Dragon
-        bezierCurve(g2, 310, 497, 496, 505, 368, 528);
-        bezierCurve(g2, 368, 528, 229, 536, 214, 514);
-        bezierCurve(g2, 214, 514, 215, 499, 317, 497);
 
         g.drawImage(buffer, 0, 0, null);
         // test
