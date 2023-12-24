@@ -203,6 +203,11 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 445, 371, 436, 361, 401, 366);
         bezierCurve(g2, 445, 371, 448, 349, 473, 343);
 
+        bezierCurve(g2, 455, 327, 442, 327, 440, 341);
+        bezierCurve(g2, 440, 341, 426, 326, 416, 344);
+        bezierCurve(g2, 416, 344, 412, 332, 386, 333);
+        bezierCurve(g2, 386, 333, 366, 329, 363, 326);
+
         // Tail
         bezierCurve(g2, 384, 357, 400, 391, 394, 407);
         bresenhamLine(g2, 394, 407, 410, 416);
@@ -240,6 +245,12 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 222, 375, 226, 357, 244, 337);
         bezierCurve(g2, 244, 337, 256, 316, 255, 314);
 
+        bezierCurve(g2, 355, 463, 347, 461, 348, 439);
+        bezierCurve(g2, 348, 439, 337, 444, 337, 445);
+        bezierCurve(g2, 337, 445, 316, 458, 274, 444);
+        bezierCurve(g2, 274, 444, 264, 439, 264, 438);
+        bezierCurve(g2, 264, 438, 267, 463, 259, 461);
+
         // Left wing
         bezierCurve(g2, 255, 314, 210, 315, 200, 296);
         bezierCurve(g2, 200, 296, 220, 281, 187, 290);
@@ -251,6 +262,13 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 209, 367, 186, 359, 168, 370);
         bezierCurve(g2, 168, 370, 174, 317, 186, 311);
         bezierCurve(g2, 168, 370, 157, 341, 138, 346);
+        // bresenhamLine(g2, 138, 346, 141, 343);
+        // bezierCurve(g2, 255, 314, 306, 336, 361, 312);
+
+        bezierCurve(g2, 252, 324, 241, 332, 221, 333);
+        bezierCurve(g2, 221, 333, 206, 330, 198, 345);
+        bezierCurve(g2, 198, 345, 185, 320, 173, 347);
+        bezierCurve(g2, 173, 347, 175, 325, 158, 328);
 
         // Fire
         bezierCurve(g2, 305, 318, 303, 363, 293, 358);
@@ -264,6 +282,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
 
         // Fat
         bezierCurve(g2, 353, 356, 341, 320, 340, 320);
+        bezierCurve(g2, 340, 320, 300, 328, 273, 320);
         bezierCurve(g2, 273, 320, 260, 355, 261, 357);
         bezierCurve(g2, 260, 415, 266, 440, 301, 442);
         bezierCurve(g2, 301, 442, 341, 447, 355, 415);
@@ -273,12 +292,20 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 332, 387, 340, 346, 364, 362);
         bezierCurve(g2, 364, 362, 379, 372, 382, 380);
 
+        bezierCurve(g2, 394, 387, 384, 414, 343, 392);
+        bezierCurve(g2, 343, 392, 331, 394, 330, 392);
+        bezierCurve(g2, 374, 411, 324, 424, 332, 387);
+        bezierCurve(g2, 332, 387, 340, 346, 364, 362);
+        bezierCurve(g2, 395, 402, 383, 411, 372, 411);
+
         // Left Hand
         bezierCurve(g2, 231, 380, 260, 336, 276, 371);
         bezierCurve(g2, 276, 371, 293, 407, 267, 414);
         bezierCurve(g2, 267, 414, 243, 415, 239, 411);
+        bezierCurve(g2, 219, 386, 226, 415, 274, 392);
 
-        
+        bezierCurve(g2, 274, 392, 281, 395, 283, 393);
+        bezierCurve(g2, 217, 401, 232, 413, 248, 414);
 
         // Right Nail H
         bezierCurve(g2, 352, 358, 366, 374, 346, 369);
@@ -311,6 +338,11 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 230, 460, 228, 466, 229, 469);
         bezierCurve(g2, 229, 469, 231, 446, 218, 456);
         bresenhamLine(g2, 218, 456, 215, 459);
+
+        // Shadow Dragon
+        bezierCurve(g2, 310, 497, 496, 505, 368, 528);
+        bezierCurve(g2, 368, 528, 229, 536, 214, 514);
+        bezierCurve(g2, 214, 514, 215, 499, 317, 497);
 
         g.drawImage(buffer, 0, 0, null);
         // test
