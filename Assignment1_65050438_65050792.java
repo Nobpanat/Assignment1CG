@@ -12,11 +12,11 @@ public class Assignment1_65050438_65050792 extends JPanel {
         JFrame f = new JFrame();
         f.add(assignment1);
         f.setTitle("Assignment1");
-        f.setSize(600,600);
+        f.setSize(600, 600);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setVisible(true);
     }
-    
+
     public void paintComponent(Graphics g) {
         BufferedImage buffer = new BufferedImage(601, 601, BufferedImage.TYPE_INT_ARGB);
         Graphics2D g2 = buffer.createGraphics();
@@ -24,18 +24,177 @@ public class Assignment1_65050438_65050792 extends JPanel {
         g2.setColor(Color.WHITE);
         g2.fillRect(0, 0, 600, 600);
 
+        // หัวนอก
         g2.setColor(Color.BLACK);
-        bezierCurve(g2, 230, 80, 175, 125, 203, 187, 216, 195);
+
+        bezierCurve(g2, 231, 81, 169, 133, 217, 193);
+        bezierCurve(g2, 217, 193, 212, 211, 214, 212);
+        bezierCurve(g2, 214, 212, 194, 211, 195, 213);
+        bezierCurve(g2, 195, 213, 189, 217, 190, 219);
+        bezierCurve(g2, 190, 219, 196, 239, 203, 246);
+        bezierCurve(g2, 203, 246, 188, 252, 190, 258);
+        bezierCurve(g2, 190, 258, 194, 275, 215, 281);
+        bezierCurve(g2, 215, 281, 246, 312, 259, 313);
+        bezierCurve(g2, 259, 313, 295, 324, 305, 323);
+        bezierCurve(g2, 305, 323, 357, 318, 364, 310);
+        bezierCurve(g2, 364, 310, 394, 290, 397, 282);
+        bezierCurve(g2, 397, 282, 430, 266, 425, 256);
+        bezierCurve(g2, 425, 256, 420, 246, 411, 247);
+        bezierCurve(g2, 411, 247, 428, 220, 423, 216);
+        bezierCurve(g2, 423, 216, 421, 210, 402, 214);
+        bezierCurve(g2, 402, 214, 400, 194, 396, 193);
+        bezierCurve(g2, 396, 193, 421, 162, 415, 142);
+        bezierCurve(g2, 415, 142, 409, 90, 383, 81);
+        bezierCurve(g2, 383, 81, 362, 128, 355, 122);
+        bezierCurve(g2, 355, 122, 346, 110, 343, 110);
+        bezierCurve(g2, 343, 110, 335, 136, 330, 133);
+        bezierCurve(g2, 330, 133, 301, 128, 282, 133);
+        bezierCurve(g2, 282, 133, 275, 125, 271, 110);
+        bezierCurve(g2, 271, 110, 261, 117, 259, 122);
+        bezierCurve(g2, 259, 122, 242, 111, 231, 81);
+        bezierCurve(g2, 355, 122, 360, 142, 356, 142);
+        bezierCurve(g2, 260, 122, 255, 139, 257, 142);
+
+        // หัวด้านใน 3 วงที่หน้า
+        bezierCurve(g2, 307, 131, 297, 138, 298, 146);
+        bezierCurve(g2, 298, 146, 298, 154, 306, 158);
+        bezierCurve(g2, 306, 158, 316, 155, 317, 146);
+        bezierCurve(g2, 317, 146, 317, 137, 307, 131);
+
+        bezierCurve(g2, 307, 167, 296, 172, 296, 184);
+        bezierCurve(g2, 296, 184, 296, 192, 306, 197);
+        bezierCurve(g2, 306, 197, 316, 195, 318, 184);
+        bezierCurve(g2, 318, 184, 320, 173, 307, 167);
+
+        bezierCurve(g2, 307, 210, 299, 214, 300, 220);
+        bezierCurve(g2, 300, 220, 301, 229, 307, 229);
+        bezierCurve(g2, 307, 229, 316, 225, 314, 220);
+        bezierCurve(g2, 314, 220, 313, 212, 307, 210);
+
+        // ตา ซ้าย
+        bezierCurve(g2, 220, 239, 218, 200, 253, 211);
+        bezierCurve(g2, 253, 211, 281, 214, 281, 261);
+        bezierCurve(g2, 281, 261, 278, 284, 243, 264);
+        bezierCurve(g2, 243, 264, 226, 255, 220, 239);
+        // ตาด้านใน ซ้าย
+        bezierCurve(g2, 264, 229, 255, 229, 256, 241);
+        bezierCurve(g2, 256, 241, 256, 251, 264, 253);
+        bezierCurve(g2, 264, 253, 273, 252, 273, 240);
+        bezierCurve(g2, 273, 240, 273, 228, 264, 229);
+
+        bezierCurve(g2, 220, 236, 221, 221, 232, 213);
+        bezierCurve(g2, 232, 213, 253, 211, 250, 216);
+        bezierCurve(g2, 250, 216, 237, 217, 235, 240);
+        bezierCurve(g2, 235, 240, 257, 246, 241, 258);
+        bezierCurve(g2, 241, 258, 242, 264, 244, 265);
+
+        bezierCurve(g2, 277, 263, 273, 249, 248, 256);
+        bezierCurve(g2, 248, 256, 239, 261, 250, 265);
+        bezierCurve(g2, 250, 265, 258, 269, 267, 268);
+        bezierCurve(g2, 267, 268, 275, 267, 277, 263);
+        // ตาขวา
+        bezierCurve(g2, 391, 239, 396, 193, 352, 213);
+        bezierCurve(g2, 352, 213, 326, 227, 332, 263);
+        bezierCurve(g2, 332, 263, 334, 278, 356, 271);
+        bezierCurve(g2, 356, 271, 389, 256, 391, 239);
+
+        // ตาด้านในขวา
+        bezierCurve(g2, 347, 228, 337, 230, 339, 243);
+        bezierCurve(g2, 339, 243, 340, 252, 347, 253);
+        bezierCurve(g2, 347, 253, 356, 251, 356, 241);
+        bezierCurve(g2, 356, 241, 356, 229, 347, 228);
+
+        bezierCurve(g2, 391, 236, 392, 233, 387, 221);
+        bezierCurve(g2, 387, 221, 376, 206, 359, 215);
+        bezierCurve(g2, 359, 215, 377, 218, 377, 240);
+        bezierCurve(g2, 377, 240, 365, 241, 365, 251);
+        bezierCurve(g2, 365, 251, 368, 259, 371, 259);
+        bezierCurve(g2, 371, 259, 373, 256, 369, 264);
+
+        bezierCurve(g2, 351, 254, 337, 254, 334, 264);
+        bezierCurve(g2, 334, 264, 340, 271, 350, 268);
+        bezierCurve(g2, 350, 268, 364, 267, 367, 259);
+        bezierCurve(g2, 367, 259, 366, 254, 351, 254);
+
+        // จมูก
+        bezierCurve(g2, 284, 275, 296, 266, 306, 267);
+        bezierCurve(g2, 306, 267, 322, 268, 327, 274);
+        bezierCurve(g2, 327, 274, 308, 270, 306, 271);
+        bezierCurve(g2, 306, 271, 285, 273, 284, 275);
+
+        // จมูกซ้าย
+        bezierCurve(g2, 292, 279, 298, 281, 297, 284);
+        bezierCurve(g2, 297, 284, 298, 285, 300, 284);
+        bezierCurve(g2, 300, 284, 300, 276, 292, 279);
+
+        // จมูกขวา
+        bezierCurve(g2, 313, 284, 312, 277, 320, 278);
+        bezierCurve(g2, 320, 278, 314, 282, 316, 284);
+        bezierCurve(g2, 316, 284, 315, 284, 313, 284);
+
+        // ปาก
+        bezierCurve(g2, 290, 292, 311, 296, 323, 292);
+        bezierCurve(g2, 323, 292, 332, 297, 321, 310);
+        bezierCurve(g2, 321, 310, 305, 322, 291, 310);
+        bezierCurve(g2, 291, 310, 280, 297, 290, 292);
+
+        // ปาก ด้านใน
+        bezierCurve(g2, 298, 309, 302, 303, 306, 304);
+        bezierCurve(g2, 306, 304, 312, 303, 313, 309);
+        bezierCurve(g2, 313, 309, 307, 312, 306, 311);
+        bezierCurve(g2, 306, 311, 303, 311, 298, 309);
+
+        // ขอบหน้า แดงเข้ม
+        bezierCurve(g2, 200, 212, 202, 234, 215, 248);
+        bezierCurve(g2, 215, 248, 203, 245, 203, 247);
+
+        bezierCurve(g2, 191, 252, 211, 268, 218, 268);
+        bezierCurve(g2, 218, 268, 242, 304, 289, 307);
+
+        bezierCurve(g2, 323, 307, 371, 305, 396, 268);
+        bezierCurve(g2, 396, 268, 420, 262, 420, 250);
+
+        bezierCurve(g2, 411, 246, 400, 248, 400, 246);
+        bezierCurve(g2, 400, 246, 414, 233, 413, 211);
+
+        bezierCurve(g2, 398, 193, 385, 174, 386, 170);
+        bezierCurve(g2, 386, 170, 415, 148, 393, 89);
+
+        bezierCurve(g2, 216, 193, 229, 173, 229, 170);
+        bezierCurve(g2, 229, 170, 199, 152, 221, 88);
+
+        // หน้าด้านใน สีขาว ซ้าย
+        bezierCurve(g2, 232, 80, 226, 115, 257, 131);
+
+        bezierCurve(g2, 257, 142, 248, 150, 249, 151);
+        bezierCurve(g2, 249, 151, 289, 135, 299, 139);
+        bezierCurve(g2, 302, 134, 265, 138, 251, 148);
+
+        // หู สีแหลือง ซ้าย
+        bezierCurve(g2, 269, 118, 261, 128, 262, 134);
+        bresenhamLine(g2, 262, 134, 274, 131);
+        bezierCurve(g2, 274, 131, 269, 124, 269, 118);
+
+        // หู สีเหลือง ขวา
+        bezierCurve(g2, 339, 131, 345, 122, 344, 118);
+        bezierCurve(g2, 344, 118, 354, 130, 352, 134);
+        bresenhamLine(g2, 352, 134, 339, 131);
+
+        // หน้าด้านในสีขาว ขวา
+        bezierCurve(g2, 312, 134, 349, 136, 367, 151);
+        bezierCurve(g2, 367, 151, 330, 137, 315, 139);
+
+        bezierCurve(g2, 356,130,385, 120 , 382 , 80);
+
         g.drawImage(buffer, 0, 0, null);
-        //test
     }
 
-    private void plot(Graphics g, int x, int y , int size) {
+    private void plot(Graphics g, int x, int y, int size) {
         g.fillRect(x, y, size, size);
     }
 
     // method เส้นตรง
-    private void bresenhamLine(Graphics g,int x1, int y1, int x2, int y2) {
+    private void bresenhamLine(Graphics g, int x1, int y1, int x2, int y2) {
         int dx = Math.abs(x2 - x1);
         int dy = Math.abs(y2 - y1);
 
@@ -44,54 +203,69 @@ public class Assignment1_65050438_65050792 extends JPanel {
 
         boolean isSwap = false;
 
-        if(dy > dx){
+        if (dy > dx) {
             int temp = dx;
             dx = dy;
             dy = temp;
             isSwap = true;
         }
-        
+
         int D = 2 * dy - dx;
         int x = x1;
         int y = y1;
 
-        for(int i=1; i<=dx; i++){
-            plot(g, x, y, 3);
-            if(D > 0){
-                if(isSwap)
+        for (int i = 1; i <= dx; i++) {
+            plot(g, x, y, 1);
+            if (D > 0) {
+                if (isSwap)
                     x += sx;
-                else 
+                else
                     y += sy;
 
                 D -= 2 * dx;
             }
 
-            if(isSwap)
+            if (isSwap)
                 y += sy;
-            else 
+            else
                 x += sx;
-            
+
             D += 2 * dy;
         }
     }
 
     // method เส้นโค้ง
-    public void bezierCurve (Graphics g, int x1, int y1, int x2, int y2, int x3, int y3,int x4, int y4){
-        for(int i=0; i <= 1000; i++)
-        {
+    public void bezierCurve(Graphics g, int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4) {
+        for (int i = 0; i <= 1000; i++) {
             double t = i / 1000.0;
 
-            int x = (int)(Math.pow(1-t,3)*x1 + 
-                    3*t*Math.pow(1-t,2)*x2 +
-                    3*t*t*(1-t)*x3 + 
-                    Math.pow(t,3)*x4);
-            
-            int y = (int)(Math.pow(1-t,3)*y1 +
-                    3*t*Math.pow(1-t,2)*y2 +
-                    3*t*t*(1-t)*y3 +
-                    Math.pow(t,3)*y4);
-            
+            int x = (int) (Math.pow(1 - t, 3) * x1 +
+                    3 * t * Math.pow(1 - t, 2) * x2 +
+                    3 * t * t * (1 - t) * x3 +
+                    Math.pow(t, 3) * x4);
+
+            int y = (int) (Math.pow(1 - t, 3) * y1 +
+                    3 * t * Math.pow(1 - t, 2) * y2 +
+                    3 * t * t * (1 - t) * y3 +
+                    Math.pow(t, 3) * y4);
+
             plot(g, x, y, 1);
+        }
+    }
+
+    public void bezierCurve(Graphics g, int x1, int y1, int x2, int y2, int x3, int y3) {
+        for (int i = 0; i <= 1000; i++) {
+            double t = i / 1000.0;
+
+            int xt = (int) (Math.pow(1 - t, 2) * x1 +
+                    2 * t * Math.pow(1 - t, 1) * x2 +
+                    t * t * x3);
+
+            int yt = (int) (Math.pow(1 - t, 2) * y1 +
+                    2 * t * Math.pow(1 - t, 1) * y2 +
+                    t * t * y3);
+
+            plot(g, xt, yt, 1);
         }
     }
 
@@ -139,7 +313,5 @@ public class Assignment1_65050438_65050792 extends JPanel {
         }
         return m;
     }
-       
 
-    
 }
