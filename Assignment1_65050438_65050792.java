@@ -251,8 +251,6 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 209, 367, 186, 359, 168, 370);
         bezierCurve(g2, 168, 370, 174, 317, 186, 311);
         bezierCurve(g2, 168, 370, 157, 341, 138, 346);
-        bresenhamLine(g2, 138, 346, 141, 343);
-        bezierCurve(g2, 255, 314, 306, 336, 361, 312);
 
         // Fire
         bezierCurve(g2, 305, 318, 303, 363, 293, 358);
@@ -266,7 +264,6 @@ public class Assignment1_65050438_65050792 extends JPanel {
 
         // Fat
         bezierCurve(g2, 353, 356, 341, 320, 340, 320);
-        bezierCurve(g2, 340, 320, 300, 328, 273, 320);
         bezierCurve(g2, 273, 320, 260, 355, 261, 357);
         bezierCurve(g2, 260, 415, 266, 440, 301, 442);
         bezierCurve(g2, 301, 442, 341, 447, 355, 415);
