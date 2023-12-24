@@ -23,7 +23,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
 
         g2.setColor(Color.WHITE);
         g2.fillRect(0, 0, 600, 600);
-
+        // branch nite ----------------------------------------------------------------
         // หัวนอก
         g2.setColor(Color.BLACK);
 
