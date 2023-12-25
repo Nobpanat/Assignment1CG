@@ -17,6 +17,8 @@ bresenhamLine(g, 103,0,0,48);
 bresenhamLine(g, 0,48,150,0);
 bresenhamLine(g, 150,0,103,0);
 
+55 0 122
+95 48 140
 3
 bresenhamLine(g, 0,47,151,0);
 bresenhamLine(g, 151,0,43,185);
