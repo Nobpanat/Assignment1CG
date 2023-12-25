@@ -184,7 +184,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 312, 134, 349, 136, 367, 151);
         bezierCurve(g2, 367, 151, 330, 137, 315, 139);
 
-        bezierCurve(g2, 356,130,385, 120 , 382 , 80);
+        bezierCurve(g2, 356, 130, 385, 120, 382, 80);
 
         // M branch-----------------------
 
@@ -340,9 +340,44 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bresenhamLine(g2, 218, 456, 215, 459);
 
         // Shadow Dragon
-        bezierCurve(g2, 310, 497, 496, 505, 368, 528);
-        bezierCurve(g2, 368, 528, 229, 536, 214, 514);
-        bezierCurve(g2, 214, 514, 215, 499, 317, 497);
+        // bezierCurve(g2, 310, 497, 496, 505, 368, 528);
+        // bezierCurve(g2, 368, 528, 229, 536, 214, 514);
+        // bezierCurve(g2, 214, 514, 215, 499, 317, 497);
+
+        // Triangle
+        bresenhamLine(g2, 540, 182, 600, 324);
+        bresenhamLine(g2, 600, 324, 600, 182);
+        bresenhamLine(g2, 600, 182, 540, 182);
+        bresenhamLine(g2, 600, 11, 541, 182);
+        bresenhamLine(g2, 541, 182, 429, 0);
+        bresenhamLine(g2, 398, 0, 352, 120);
+        bresenhamLine(g2, 440, 227, 541, 182);
+        bresenhamLine(g2, 418, 237, 541, 182);
+        bresenhamLine(g2, 541, 182, 463, 321);
+        bresenhamLine(g2, 435, 368, 408, 417);
+        bresenhamLine(g2, 600, 475, 417, 401);
+        bresenhamLine(g2, 417, 401, 428, 420);
+        bresenhamLine(g2, 452, 498, 500, 600);
+        bresenhamLine(g2, 291, 496, 508, 600);
+        bresenhamLine(g2, 291, 496, 340, 461);
+        bresenhamLine(g2, 291, 496, 248, 470);
+        bresenhamLine(g2, 291, 496, 343, 600);
+        bresenhamLine(g2, 291, 496, 237, 600);
+        bresenhamLine(g2, 291, 496, 76, 600);
+        bresenhamLine(g2, 51, 600, 165, 404);
+        bresenhamLine(g2, 165, 404, 224, 446);
+        bresenhamLine(g2, 165, 404, 222, 404);
+        bresenhamLine(g2, 165, 404, 201, 364);
+        bresenhamLine(g2, 165, 404, 41, 184);
+        bresenhamLine(g2, 41, 184, 197, 250);
+        bresenhamLine(g2, 41, 184, 150, 0);      
+        bresenhamLine(g2, 179, 0, 217, 104);
+        bresenhamLine(g2, 103,0,0,46);
+        bresenhamLine(g2, 41,184,0,147);
+        bresenhamLine(g2, 41,184,0,187);
+        bresenhamLine(g2, 41,184,0,226);
+        bresenhamLine(g2, 165,404,0,331);
+        bresenhamLine(g2, 0,508,37,600);
 
         g.drawImage(buffer, 0, 0, null);
         // test
@@ -374,7 +409,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
         int y = y1;
 
         for (int i = 1; i <= dx; i++) {
-            plot(g, x, y, 1);
+            plot(g, x, y, 3);
             if (D > 0) {
                 if (isSwap)
                     x += sx;
@@ -408,7 +443,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
                     3 * t * t * (1 - t) * y3 +
                     Math.pow(t, 3) * y4);
 
-            plot(g, x, y, 1);
+            plot(g, x, y, 3);
         }
     }
 
@@ -424,7 +459,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
                     2 * t * Math.pow(1 - t, 1) * y2 +
                     t * t * y3);
 
-            plot(g, xt, yt, 1);
+            plot(g, xt, yt, 3);
         }
     }
 
