@@ -24,8 +24,119 @@ public class Assignment1_65050438_65050792 extends JPanel {
         g2.setColor(Color.WHITE);
         g2.fillRect(0, 0, 600, 600);
         // branch nite ----------------------------------------------------------------
-        // หัวนอก
         g2.setColor(Color.BLACK);
+        // 2024 เส้นตรง
+        // เลข 2
+        bresenhamLine(g2, 239, 24, 261, 24);
+        bresenhamLine(g2, 261, 24, 257, 29);
+        bresenhamLine(g2, 257, 29, 243, 29);
+        bresenhamLine(g2, 243, 29, 239, 24);
+
+        bresenhamLine(g2, 259, 30, 262, 26);
+        bresenhamLine(g2, 262, 26, 262, 47);
+        bresenhamLine(g2, 262, 47, 259, 44);
+        bresenhamLine(g2, 259, 44, 259, 30);
+
+        bresenhamLine(g2, 257, 47, 259, 49);
+        bresenhamLine(g2, 259, 49, 257, 51);
+        bresenhamLine(g2, 257, 51, 243, 51);
+        bresenhamLine(g2, 243, 51, 239, 49);
+        bresenhamLine(g2, 239, 49, 243, 47);
+        bresenhamLine(g2, 243, 47, 257, 47);
+
+        bresenhamLine(g2, 238, 51, 242, 53);
+        bresenhamLine(g2, 242, 53, 242, 66);
+        bresenhamLine(g2, 242, 66, 238, 71);
+        bresenhamLine(g2, 238, 71, 238, 51);
+
+        bresenhamLine(g2, 243, 69, 239, 73);
+        bresenhamLine(g2, 239, 73, 261, 73);
+        bresenhamLine(g2, 261, 73, 257, 69);
+        bresenhamLine(g2, 257, 69, 243, 69);
+
+        // เลข 0
+        bresenhamLine(g2, 272, 24, 275, 29);
+        bresenhamLine(g2, 275, 29, 288, 29);
+        bresenhamLine(g2, 288, 29, 292, 24);
+        bresenhamLine(g2, 292, 24, 272, 24);
+
+        bresenhamLine(g2, 289, 31, 294, 26);
+        bresenhamLine(g2, 294, 26, 294, 47);
+        bresenhamLine(g2, 294, 47, 289, 43);
+        bresenhamLine(g2, 289, 43, 289, 31);
+
+        bresenhamLine(g2, 289, 52, 294, 49);
+        bresenhamLine(g2, 294, 49, 294, 71);
+        bresenhamLine(g2, 294, 71, 289, 67);
+        bresenhamLine(g2, 289, 67, 289, 52);
+
+        bresenhamLine(g2, 288, 69, 292, 73);
+        bresenhamLine(g2, 292, 73, 271, 73);
+        bresenhamLine(g2, 271, 73, 275, 69);
+        bresenhamLine(g2, 275, 69, 288, 69);
+
+        bresenhamLine(g2, 270, 49, 274, 53);
+        bresenhamLine(g2, 274, 53, 274, 66);
+        bresenhamLine(g2, 274, 66, 270, 71);
+        bresenhamLine(g2, 270, 71, 270, 49);
+
+        bresenhamLine(g2, 270, 25, 274, 31);
+        bresenhamLine(g2, 274, 31, 274, 45);
+        bresenhamLine(g2, 274, 45, 270, 47);
+        bresenhamLine(g2, 270, 47, 270, 25);
+
+        // เลข2 ตัวที่ 2
+        bresenhamLine(g2, 303, 24, 323, 24);
+        bresenhamLine(g2, 323, 24, 319, 29);
+        bresenhamLine(g2, 319, 29, 306, 29);
+        bresenhamLine(g2, 306, 29, 303, 24);
+
+        bresenhamLine(g2, 321, 30, 325, 25);
+        bresenhamLine(g2, 325, 25, 325, 47);
+        bresenhamLine(g2, 325, 47, 321, 43);
+        bresenhamLine(g2, 321, 43, 321, 30);
+
+        bresenhamLine(g2, 320, 47, 323, 49);
+        bresenhamLine(g2, 323, 49, 320, 51);
+        bresenhamLine(g2, 320, 51, 306, 51);
+        bresenhamLine(g2, 306, 51, 303, 49);
+        bresenhamLine(g2, 303, 49, 306, 47);
+        bresenhamLine(g2, 306, 47, 320, 47);
+
+        bresenhamLine(g2, 301, 51, 305, 53);
+        bresenhamLine(g2, 305, 53, 305, 67);
+        bresenhamLine(g2, 305, 67, 301, 71);
+        bresenhamLine(g2, 301, 71, 301, 51);
+
+        bresenhamLine(g2, 307, 67, 303, 73);
+        bresenhamLine(g2, 303, 73, 323, 73);
+        bresenhamLine(g2, 323, 73, 321, 67);
+        bresenhamLine(g2, 321, 67, 307, 67);
+
+        // เลข 4
+        bresenhamLine(g2, 333, 25, 337, 30);
+        bresenhamLine(g2, 337, 30, 337, 44);
+        bresenhamLine(g2, 337, 44, 333, 47);
+        bresenhamLine(g2, 333, 47, 333, 25);
+
+        bresenhamLine(g2, 353, 30, 357, 24);
+        bresenhamLine(g2, 357, 24, 357, 47);
+        bresenhamLine(g2, 357, 47, 353, 43);
+        bresenhamLine(g2, 353, 43, 353, 30);
+
+        bresenhamLine(g2, 337, 47, 335, 49);
+        bresenhamLine(g2, 335, 49, 337, 51);
+        bresenhamLine(g2, 337, 51, 353, 51);
+        bresenhamLine(g2, 353, 51, 355, 49);
+        bresenhamLine(g2, 355, 49, 353, 47);
+        bresenhamLine(g2, 353, 47, 337, 47);
+
+        bresenhamLine(g2, 353, 53, 357, 50);
+        bresenhamLine(g2, 357, 50, 357, 71);
+        bresenhamLine(g2, 357, 71, 353, 66);
+        bresenhamLine(g2, 353, 66, 353, 53);
+
+        // หัวนอก
 
         bezierCurve(g2, 231, 81, 169, 133, 217, 193);
         bezierCurve(g2, 217, 193, 212, 211, 214, 212);
@@ -184,7 +295,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 312, 134, 349, 136, 367, 151);
         bezierCurve(g2, 367, 151, 330, 137, 315, 139);
 
-        bezierCurve(g2, 356,130,385, 120 , 382 , 80);
+        bezierCurve(g2, 356, 130, 385, 120, 382, 80);
 
         // M branch-----------------------
 
@@ -338,7 +449,6 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 230, 460, 228, 466, 229, 469);
         bezierCurve(g2, 229, 469, 231, 446, 218, 456);
         bresenhamLine(g2, 218, 456, 215, 459);
-
 
         g.drawImage(buffer, 0, 0, null);
         // test
