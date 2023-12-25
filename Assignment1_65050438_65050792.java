@@ -138,7 +138,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
 
         // หัวนอก
 
-        bezierCurve(g2, 231, 81, 169, 133, 217, 193);
+        bezierCurve(g2, 232,81,222, 80 ,173 , 143 , 217 , 193);
         bezierCurve(g2, 217, 193, 212, 211, 214, 212);
         bezierCurve(g2, 214, 212, 194, 211, 195, 213);
         bezierCurve(g2, 195, 213, 189, 217, 190, 219);
@@ -497,8 +497,41 @@ public class Assignment1_65050438_65050792 extends JPanel {
 
 
         // polygon สามเหลี่ยม
-        createTrianglePolygon(g2, 10, 10, 30, 30, 25, 40);
-        createTrianglePolygon(g2, 60, 60, 80, 90, 75, 100);
+        // createTrianglePolygon(g2, 10, 10, 30, 30, 25, 40);
+        // createTrianglePolygon(g2, 60, 60, 80, 90, 75, 100);
+    
+        // สามเหลี่ยม1
+        createTrianglePolygon(g2, 0, 0, 103, 0, 0, 47);
+        
+        //สามเหลี่ยม2
+        createTrianglePolygon(g2, 103, 0, 0, 48, 150, 0);
+
+        //สามเหลี่ยม3
+        createTrianglePolygon(g2, 0, 47, 151, 0, 43, 185);
+
+        //สามเหลี่ยม4
+        createTrianglePolygon(g2, 0, 47, 42, 186, 0, 148);
+
+        //สามเหลี่ยม5
+        createTrianglePolygon(g2, 0, 148, 42, 186, 0, 186);
+
+        //สามเหลี่ยม6
+        createTrianglePolygon(g2, 43, 187, 0, 187, 0, 227);
+
+        //สามเหลี่ยม7
+        createTrianglePolygon(g2, 43, 187, 0, 226, 0, 330);
+
+        //สามเหลี่ยม8
+        createTrianglePolygon(g2, 42, 187, 0, 332, 164, 405);
+
+        //สามเหลี่ยม9
+        createTrianglePolygon(g2, 0, 331, 165, 405, 0, 506);
+
+        //สามเหลี่ยม10
+        createTrianglePolygon(g2, 163, 405, 0, 506, 50, 600);
+
+        //สามเหลี่ยม11
+        createTrianglePolygon(g2, 78, 600, 236, 600, 292, 498);
 
         g.drawImage(buffer, 0, 0, null);
 
