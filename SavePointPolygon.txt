@@ -1,0 +1,67 @@
+0 0 m
+107 0 l
+0 50 l
+0 0 l
+
+ // หัวนอก
+
+// bezierCurve(g2, 231, 81, 169, 133, 217, 193)
+
+1
+bresenhamLine(g, 0,0,103,0);
+bresenhamLine(g, 103,0,0,47);
+bresenhamLine(g, 0,47,0,0);
+
+2
+bresenhamLine(g, 103,0,0,48);
+bresenhamLine(g, 0,48,150,0);
+bresenhamLine(g, 150,0,103,0);
+
+55 0 122
+95 48 140
+3
+bresenhamLine(g, 0,47,151,0);
+bresenhamLine(g, 151,0,43,185);
+bresenhamLine(g, 43,185,0,47);
+
+4
+bresenhamLine(g, 0,47,42,186);
+bresenhamLine(g, 42,186,0,148);
+bresenhamLine(g, 0,148,0,47);
+
+5
+bresenhamLine(g, 0,148,42,186);
+bresenhamLine(g, 42,186,0,186);
+bresenhamLine(g, 0,186,0,148);
+
+6
+bresenhamLine(g, 43,187,0,187);
+bresenhamLine(g, 0,187,0,227);
+bresenhamLine(g, 0,227,43,187);
+
+สามเหลี่ยม7
+bresenhamLine(g, 43,187,0,226);
+bresenhamLine(g, 0,226,0,330);
+bresenhamLine(g, 0,330,43,187);
+
+สามเหลี่ยม8
+bresenhamLine(g, 42,187,0,332);
+bresenhamLine(g, 0,332,164,405);
+bresenhamLine(g, 164,405,42,187);
+
+สามเหลี่ยม9
+bresenhamLine(g, 0,331,165,405);
+bresenhamLine(g, 165,405,0,506);
+bresenhamLine(g, 0,506,0,331);
+
+สามเหลี่ยม10
+bresenhamLine(g, 163,405,0,506);
+bresenhamLine(g, 0,506,50,600);
+bresenhamLine(g, 50,600,163,405);
+
+สามเหลี่ยม11
+bresenhamLine(g, 78,600,236,600);
+bresenhamLine(g, 236,600,292,498);
+bresenhamLine(g, 292,498,78,600);
+
+

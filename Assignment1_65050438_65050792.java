@@ -23,11 +23,131 @@ public class Assignment1_65050438_65050792 extends JPanel {
 
         g2.setColor(Color.WHITE);
         g2.fillRect(0, 0, 600, 600);
-        // branch nite ----------------------------------------------------------------
-        // หัวนอก
-        g2.setColor(Color.BLACK);
 
-        bezierCurve(g2, 231, 81, 169, 133, 217, 193);
+        // Design System Color
+        Color darkBlueEage = new Color(58, 2, 107);
+        Color darkBlueInEye = new Color(55, 0, 122);
+        Color lightBlueInEye = new Color(95, 48, 140);
+
+        // branch nite ----------------------------------------------------------------
+        g2.setColor(Color.BLACK);
+        // 2024 เส้นตรง
+        // เลข 2
+        bresenhamLine(g2, 239, 24, 261, 24);
+        bresenhamLine(g2, 261, 24, 257, 29);
+        bresenhamLine(g2, 257, 29, 243, 29);
+        bresenhamLine(g2, 243, 29, 239, 24);
+
+        bresenhamLine(g2, 259, 30, 262, 26);
+        bresenhamLine(g2, 262, 26, 262, 47);
+        bresenhamLine(g2, 262, 47, 259, 44);
+        bresenhamLine(g2, 259, 44, 259, 30);
+
+        bresenhamLine(g2, 257, 47, 259, 49);
+        bresenhamLine(g2, 259, 49, 257, 51);
+        bresenhamLine(g2, 257, 51, 243, 51);
+        bresenhamLine(g2, 243, 51, 239, 49);
+        bresenhamLine(g2, 239, 49, 243, 47);
+        bresenhamLine(g2, 243, 47, 257, 47);
+
+        bresenhamLine(g2, 238, 51, 242, 53);
+        bresenhamLine(g2, 242, 53, 242, 66);
+        bresenhamLine(g2, 242, 66, 238, 71);
+        bresenhamLine(g2, 238, 71, 238, 51);
+
+        bresenhamLine(g2, 243, 69, 239, 73);
+        bresenhamLine(g2, 239, 73, 261, 73);
+        bresenhamLine(g2, 261, 73, 257, 69);
+        bresenhamLine(g2, 257, 69, 243, 69);
+
+        // เลข 0
+        bresenhamLine(g2, 272, 24, 275, 29);
+        bresenhamLine(g2, 275, 29, 288, 29);
+        bresenhamLine(g2, 288, 29, 292, 24);
+        bresenhamLine(g2, 292, 24, 272, 24);
+
+        bresenhamLine(g2, 289, 31, 294, 26);
+        bresenhamLine(g2, 294, 26, 294, 47);
+        bresenhamLine(g2, 294, 47, 289, 43);
+        bresenhamLine(g2, 289, 43, 289, 31);
+
+        bresenhamLine(g2, 289, 52, 294, 49);
+        bresenhamLine(g2, 294, 49, 294, 71);
+        bresenhamLine(g2, 294, 71, 289, 67);
+        bresenhamLine(g2, 289, 67, 289, 52);
+
+        bresenhamLine(g2, 288, 69, 292, 73);
+        bresenhamLine(g2, 292, 73, 271, 73);
+        bresenhamLine(g2, 271, 73, 275, 69);
+        bresenhamLine(g2, 275, 69, 288, 69);
+
+        bresenhamLine(g2, 270, 49, 274, 53);
+        bresenhamLine(g2, 274, 53, 274, 66);
+        bresenhamLine(g2, 274, 66, 270, 71);
+        bresenhamLine(g2, 270, 71, 270, 49);
+
+        bresenhamLine(g2, 270, 25, 274, 31);
+        bresenhamLine(g2, 274, 31, 274, 45);
+        bresenhamLine(g2, 274, 45, 270, 47);
+        bresenhamLine(g2, 270, 47, 270, 25);
+
+        // เลข2 ตัวที่ 2
+        bresenhamLine(g2, 303, 24, 323, 24);
+        bresenhamLine(g2, 323, 24, 319, 29);
+        bresenhamLine(g2, 319, 29, 306, 29);
+        bresenhamLine(g2, 306, 29, 303, 24);
+
+        bresenhamLine(g2, 321, 30, 325, 25);
+        bresenhamLine(g2, 325, 25, 325, 47);
+        bresenhamLine(g2, 325, 47, 321, 43);
+        bresenhamLine(g2, 321, 43, 321, 30);
+
+        bresenhamLine(g2, 320, 47, 323, 49);
+        bresenhamLine(g2, 323, 49, 320, 51);
+        bresenhamLine(g2, 320, 51, 306, 51);
+        bresenhamLine(g2, 306, 51, 303, 49);
+        bresenhamLine(g2, 303, 49, 306, 47);
+        bresenhamLine(g2, 306, 47, 320, 47);
+
+        bresenhamLine(g2, 301, 51, 305, 53);
+        bresenhamLine(g2, 305, 53, 305, 67);
+        bresenhamLine(g2, 305, 67, 301, 71);
+        bresenhamLine(g2, 301, 71, 301, 51);
+
+        bresenhamLine(g2, 307, 67, 303, 73);
+        bresenhamLine(g2, 303, 73, 323, 73);
+        bresenhamLine(g2, 323, 73, 321, 67);
+        bresenhamLine(g2, 321, 67, 307, 67);
+
+        // เลข 4
+        bresenhamLine(g2, 333, 25, 337, 30);
+        bresenhamLine(g2, 337, 30, 337, 44);
+        bresenhamLine(g2, 337, 44, 333, 47);
+        bresenhamLine(g2, 333, 47, 333, 25);
+
+        bresenhamLine(g2, 353, 30, 357, 24);
+        bresenhamLine(g2, 357, 24, 357, 47);
+        bresenhamLine(g2, 357, 47, 353, 43);
+        bresenhamLine(g2, 353, 43, 353, 30);
+
+        bresenhamLine(g2, 337, 47, 335, 49);
+        bresenhamLine(g2, 335, 49, 337, 51);
+        bresenhamLine(g2, 337, 51, 353, 51);
+        bresenhamLine(g2, 353, 51, 355, 49);
+        bresenhamLine(g2, 355, 49, 353, 47);
+        bresenhamLine(g2, 353, 47, 337, 47);
+
+        bresenhamLine(g2, 353, 53, 357, 50);
+        bresenhamLine(g2, 357, 50, 357, 71);
+        bresenhamLine(g2, 357, 71, 353, 66);
+        bresenhamLine(g2, 353, 66, 353, 53);
+
+        // หัวนอก
+
+        g2.setColor(darkBlueEage);
+        setPlotSize(3);
+
+        bezierCurve(g2, 232, 81, 222, 80, 173, 143, 217, 193);
         bezierCurve(g2, 217, 193, 212, 211, 214, 212);
         bezierCurve(g2, 214, 212, 194, 211, 195, 213);
         bezierCurve(g2, 195, 213, 189, 217, 190, 219);
@@ -71,39 +191,63 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 307, 229, 316, 225, 314, 220);
         bezierCurve(g2, 314, 220, 313, 212, 307, 210);
 
-        // ตา ซ้าย
+        setPlotSize(2);
+        // ตาซ้าย
+        // ตาซ้ายขอบนอก
         bezierCurve(g2, 220, 239, 218, 200, 253, 211);
         bezierCurve(g2, 253, 211, 281, 214, 281, 261);
+        setPlotSize(1);
         bezierCurve(g2, 281, 261, 278, 284, 243, 264);
         bezierCurve(g2, 243, 264, 226, 255, 220, 239);
-        // ตาด้านใน ซ้าย
+
+        setPlotSize(1);
+        // ตาซ้ายด้านใน
+        // ตาซ้ายกลม
+        g2.setColor(darkBlueInEye);
         bezierCurve(g2, 264, 229, 255, 229, 256, 241);
         bezierCurve(g2, 256, 241, 256, 251, 264, 253);
         bezierCurve(g2, 264, 253, 273, 252, 273, 240);
         bezierCurve(g2, 273, 240, 273, 228, 264, 229);
 
-        bezierCurve(g2, 220, 236, 221, 221, 232, 213);
-        bezierCurve(g2, 232, 213, 253, 211, 250, 216);
+        // ตาซ้ายด้านในโค้ง
+        bezierCurve(g2, 220, 236, 221, 221, 232, 210);
+        bezierCurve(g2, 232, 213, 253, 211, 250, 219);
         bezierCurve(g2, 250, 216, 237, 217, 235, 240);
         bezierCurve(g2, 235, 240, 257, 246, 241, 258);
         bezierCurve(g2, 241, 258, 242, 264, 244, 265);
 
-        bezierCurve(g2, 277, 263, 273, 249, 248, 256);
-        bezierCurve(g2, 248, 256, 239, 261, 250, 265);
-        bezierCurve(g2, 250, 265, 258, 269, 267, 268);
-        bezierCurve(g2, 267, 268, 275, 267, 277, 263);
+        // ตาซ้ายด้านในวงรี
+        g2.setColor(lightBlueInEye);
+        bezierCurve(g2, 275, 264, 270, 256, 260, 257);
+        bezierCurve(g2, 260, 257, 250, 256, 247, 260);
+        bezierCurve(g2, 247, 260, 255, 268, 261, 267);
+        bezierCurve(g2, 261, 267, 268, 269, 275, 264);
+
+        // ลงสีตาซ้ายด้านในโค้งสีน้ำเงินเข้ม
+        buffer = floodFill(buffer, 250, 226, Color.WHITE, darkBlueInEye);
+
+        // ลงสีตาซ้ายด้านในวงรี
+        buffer = floodFill(buffer, 257, 260, Color.WHITE, lightBlueInEye);
+
         // ตาขวา
+        // ตาขวาขอบนอก
+        g2.setColor(darkBlueEage);
+        setPlotSize(2);
         bezierCurve(g2, 391, 239, 396, 193, 352, 213);
         bezierCurve(g2, 352, 213, 326, 227, 332, 263);
+        setPlotSize(1);
         bezierCurve(g2, 332, 263, 334, 278, 356, 271);
         bezierCurve(g2, 356, 271, 389, 256, 391, 239);
 
-        // ตาด้านในขวา
+        // ตาขวาด้านใน
+        // ตาขวากลม
+        g2.setColor(darkBlueEage);
         bezierCurve(g2, 347, 228, 337, 230, 339, 243);
         bezierCurve(g2, 339, 243, 340, 252, 347, 253);
         bezierCurve(g2, 347, 253, 356, 251, 356, 241);
         bezierCurve(g2, 356, 241, 356, 229, 347, 228);
 
+        // ตาขวาโค้งด้านใน
         bezierCurve(g2, 391, 236, 392, 233, 387, 221);
         bezierCurve(g2, 387, 221, 376, 206, 359, 215);
         bezierCurve(g2, 359, 215, 377, 218, 377, 240);
@@ -111,10 +255,21 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 365, 251, 368, 259, 371, 259);
         bezierCurve(g2, 371, 259, 373, 256, 369, 264);
 
-        bezierCurve(g2, 351, 254, 337, 254, 334, 264);
-        bezierCurve(g2, 334, 264, 340, 271, 350, 268);
-        bezierCurve(g2, 350, 268, 364, 267, 367, 259);
-        bezierCurve(g2, 367, 259, 366, 254, 351, 254);
+        // ตาขวาด้านในวงรี
+        setPlotSize(1);
+        g2.setColor(lightBlueInEye);
+        bezierCurve(g2, 336, 263, 340, 256, 348, 256);
+        bezierCurve(g2, 348, 256, 360, 255, 366, 260);
+        bezierCurve(g2, 366, 260, 357, 269, 350, 267);
+        bezierCurve(g2, 350, 267, 340, 268, 336, 263);
+        setPlotSize(1);
+
+        // ลงสีตาขวาด้านในโค้งสีน้ำเงินเข้ม
+        buffer = floodFill(buffer, 360, 228, Color.WHITE, darkBlueInEye);
+        buffer = floodFill(buffer, 343, 272, Color.WHITE, darkBlueInEye);
+
+        // ลงสีตาซ้ายด้านในวงรี
+        buffer = floodFill(buffer, 349, 260, Color.WHITE, lightBlueInEye);
 
         // จมูก
         bezierCurve(g2, 284, 275, 296, 266, 306, 267);
@@ -339,48 +494,100 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 229, 469, 231, 446, 218, 456);
         bresenhamLine(g2, 218, 456, 215, 459);
 
-        // Shadow Dragon
-        // bezierCurve(g2, 310, 497, 496, 505, 368, 528);
-        // bezierCurve(g2, 368, 528, 229, 536, 214, 514);
-        // bezierCurve(g2, 214, 514, 215, 499, 317, 497);
+        // background --------------------------------------
+        // หลายเหลี่ยมชิดตัวซ้ายบนมังกร
+        bresenhamLine(g2, 43, 186, 150, 0);
+        bresenhamLine(g2, 150, 0, 176, 0);
+        bresenhamLine(g2, 176, 0, 216, 99);
+        bresenhamLine(g2, 43, 186, 196, 252);
 
-        // Triangle
-        bresenhamLine(g2, 540, 182, 600, 324);
-        bresenhamLine(g2, 600, 324, 600, 182);
-        bresenhamLine(g2, 600, 182, 540, 182);
-        bresenhamLine(g2, 600, 11, 541, 182);
-        bresenhamLine(g2, 541, 182, 429, 0);
-        bresenhamLine(g2, 398, 0, 352, 120);
-        bresenhamLine(g2, 440, 227, 541, 182);
-        bresenhamLine(g2, 418, 237, 541, 182);
-        bresenhamLine(g2, 541, 182, 463, 321);
-        bresenhamLine(g2, 435, 368, 408, 417);
-        bresenhamLine(g2, 600, 475, 417, 401);
-        bresenhamLine(g2, 417, 401, 428, 420);
-        bresenhamLine(g2, 452, 498, 500, 600);
-        bresenhamLine(g2, 291, 496, 508, 600);
-        bresenhamLine(g2, 291, 496, 340, 461);
-        bresenhamLine(g2, 291, 496, 248, 470);
-        bresenhamLine(g2, 291, 496, 343, 600);
-        bresenhamLine(g2, 291, 496, 237, 600);
-        bresenhamLine(g2, 291, 496, 76, 600);
-        bresenhamLine(g2, 51, 600, 165, 404);
-        bresenhamLine(g2, 165, 404, 224, 446);
-        bresenhamLine(g2, 165, 404, 222, 404);
-        bresenhamLine(g2, 165, 404, 201, 364);
-        bresenhamLine(g2, 165, 404, 41, 184);
-        bresenhamLine(g2, 41, 184, 197, 250);
-        bresenhamLine(g2, 41, 184, 150, 0);      
-        bresenhamLine(g2, 179, 0, 217, 104);
-        bresenhamLine(g2, 103,0,0,46);
-        bresenhamLine(g2, 41,184,0,147);
-        bresenhamLine(g2, 41,184,0,187);
-        bresenhamLine(g2, 41,184,0,226);
-        bresenhamLine(g2, 165,404,0,331);
-        bresenhamLine(g2, 0,508,37,600);
+        // หลายเหลี่ยมชิดตัวบนหัวมังกร
+        bresenhamLine(g2, 177, 0, 398, 0);
+        bresenhamLine(g2, 398, 0, 357, 122);
+
+        // หลายเหลี่ยมชิดตัวขวาบนมังกร
+        bresenhamLine(g2, 399, 0, 427, 0);
+        bresenhamLine(g2, 427, 0, 542, 182);
+        bresenhamLine(g2, 542, 182, 417, 235);
+
+        // หลายเหลี่นมชิดตัวปีกขวามังกร
+        bresenhamLine(g2, 541, 183, 464, 323);
+        bresenhamLine(g2, 438, 368, 417, 402);
+        bresenhamLine(g2, 417, 402, 391, 379);
+
+        // หลายเหลี่ยมชิดตัวด้านหลังมังกร
+        bresenhamLine(g2, 418, 402, 397, 402);
+        bresenhamLine(g2, 218, 403, 164, 403);
+        bresenhamLine(g2, 164, 403, 205, 366);
+
+        // หลายเหลี่ยมชิดตัวขามังกร
+        bresenhamLine(g2, 164, 405, 220, 446);
+        bresenhamLine(g2, 253, 470, 292, 498);
+        bresenhamLine(g2, 292, 498, 338, 462);
+        bresenhamLine(g2, 405, 413, 416, 402);
+
+        // หลายเหลี่ยมชิดตัวเท้าขวากับหางมังกร
+        bresenhamLine(g2, 290, 498, 507, 600);
+        bresenhamLine(g2, 507, 600, 536, 600);
+        bresenhamLine(g2, 536, 600, 417, 402);
+
+        // หลายเหลี่นมชิดตัวเท้าซ้ายมังกร
+        bresenhamLine(g2, 165, 405, 51, 600);
+        bresenhamLine(g2, 51, 600, 78, 600);
+        bresenhamLine(g2, 78, 600, 292, 498);
+
+        // หลายเหลี่ยมชิดตัวปีกซ้ายมังกร
+        bresenhamLine(g2, 165, 405, 42, 187);
+
+        // polygon สามเหลี่ยม
+        // createTrianglePolygon(g2, 10, 10, 30, 30, 25, 40);
+        // createTrianglePolygon(g2, 60, 60, 80, 90, 75, 100);
+
+        // สามเหลี่ยม1
+        createTrianglePolygon(g2, 0, 0, 103, 0, 0, 47);
+
+        // สามเหลี่ยม2
+        createTrianglePolygon(g2, 103, 0, 0, 48, 150, 0);
+
+        // สามเหลี่ยม3
+        createTrianglePolygon(g2, 0, 47, 151, 0, 43, 185);
+
+        // สามเหลี่ยม4
+        createTrianglePolygon(g2, 0, 47, 42, 186, 0, 148);
+
+        // สามเหลี่ยม5
+        createTrianglePolygon(g2, 0, 148, 42, 186, 0, 186);
+
+        // สามเหลี่ยม6
+        createTrianglePolygon(g2, 43, 187, 0, 187, 0, 227);
+
+        // สามเหลี่ยม7
+        createTrianglePolygon(g2, 43, 187, 0, 226, 0, 330);
+
+        // สามเหลี่ยม8
+        createTrianglePolygon(g2, 42, 187, 0, 332, 164, 405);
+
+        // สามเหลี่ยม9
+        createTrianglePolygon(g2, 0, 331, 165, 405, 0, 506);
+
+        // สามเหลี่ยม10
+        createTrianglePolygon(g2, 163, 405, 0, 506, 50, 600);
+
+        // สามเหลี่ยม11
+        createTrianglePolygon(g2, 78, 600, 236, 600, 292, 498);
 
         g.drawImage(buffer, 0, 0, null);
-        // test
+
+    }
+
+    private int plotSize = 1;
+
+    private void setPlotSize(int size) {
+        plotSize = size;
+    }
+
+    private int getPlotSize() {
+        return plotSize;
     }
 
     private void plot(Graphics g, int x, int y, int size) {
@@ -409,7 +616,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
         int y = y1;
 
         for (int i = 1; i <= dx; i++) {
-            plot(g, x, y, 3);
+            plot(g, x, y, getPlotSize());
             if (D > 0) {
                 if (isSwap)
                     x += sx;
@@ -443,7 +650,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
                     3 * t * t * (1 - t) * y3 +
                     Math.pow(t, 3) * y4);
 
-            plot(g, x, y, 3);
+            plot(g, x, y, getPlotSize());
         }
     }
 
@@ -459,7 +666,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
                     2 * t * Math.pow(1 - t, 1) * y2 +
                     t * t * y3);
 
-            plot(g, xt, yt, 3);
+            plot(g, xt, yt, getPlotSize());
         }
     }
 
@@ -506,6 +713,16 @@ public class Assignment1_65050438_65050792 extends JPanel {
             }
         }
         return m;
+    }
+
+    private void createTrianglePolygon(Graphics g, int x1, int y1, int x2, int y2, int x3, int y3) {
+        Polygon poly = new Polygon();
+        poly.addPoint(x1, y1);
+        poly.addPoint(x2, y2);
+        poly.addPoint(x3, y3);
+
+        g.drawPolygon(poly);
+
     }
 
 }
