@@ -450,8 +450,58 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 229, 469, 231, 446, 218, 456);
         bresenhamLine(g2, 218, 456, 215, 459);
 
+        // background --------------------------------------
+        // หลายเหลี่ยมชิดตัวซ้ายบนมังกร
+        bresenhamLine(g2, 43, 186, 150, 0);
+        bresenhamLine(g2, 150, 0, 176, 0);
+        bresenhamLine(g2, 176, 0, 216, 99);
+        bresenhamLine(g2, 43, 186, 196, 252);
+
+        // หลายเหลี่ยมชิดตัวบนหัวมังกร
+        bresenhamLine(g2, 177, 0, 398, 0);
+        bresenhamLine(g2, 398, 0, 357, 122);
+
+        // หลายเหลี่ยมชิดตัวขวาบนมังกร
+        bresenhamLine(g2, 399, 0, 427, 0);
+        bresenhamLine(g2, 427, 0, 542, 182);
+        bresenhamLine(g2, 542, 182, 417, 235);
+
+        // หลายเหลี่นมชิดตัวปีกขวามังกร
+        bresenhamLine(g2, 541, 183, 464, 323);
+        bresenhamLine(g2, 438, 368, 417, 402);
+        bresenhamLine(g2, 417, 402, 391, 379);
+
+        // หลายเหลี่ยมชิดตัวด้านหลังมังกร
+        bresenhamLine(g2, 418, 402, 397, 402);
+        bresenhamLine(g2, 218, 403, 164, 403);
+        bresenhamLine(g2, 164, 403, 205, 366);
+
+        // หลายเหลี่ยมชิดตัวขามังกร
+        bresenhamLine(g2, 164, 405, 220, 446);
+        bresenhamLine(g2, 253, 470, 292, 498);
+        bresenhamLine(g2, 292, 498, 338, 462);
+        bresenhamLine(g2, 405, 413, 416, 402);
+
+        // หลายเหลี่ยมชิดตัวเท้าขวากับหางมังกร
+        bresenhamLine(g2, 290, 498, 507, 600);
+        bresenhamLine(g2, 507, 600, 536, 600);
+        bresenhamLine(g2, 536, 600, 417, 402);
+
+        // หลายเหลี่นมชิดตัวเท้าซ้ายมังกร
+        bresenhamLine(g2, 165, 405, 51, 600);
+        bresenhamLine(g2, 51, 600, 78, 600);
+        bresenhamLine(g2, 78, 600, 292, 498);
+
+        // หลายเหลี่ยมชิดตัวปีกซ้ายมังกร
+        bresenhamLine(g2, 165,405,42,187);
+
+
+        // polygon สามเหลี่ยม
+        createTrianglePolygon(g2, 10, 10, 30, 30, 25, 40);
+        createTrianglePolygon(g2, 60, 60, 80, 90, 75, 100);
+
         g.drawImage(buffer, 0, 0, null);
-        // test
+
     }
 
     private void plot(Graphics g, int x, int y, int size) {
@@ -577,6 +627,16 @@ public class Assignment1_65050438_65050792 extends JPanel {
             }
         }
         return m;
+    }
+
+    private void createTrianglePolygon(Graphics g, int x1, int y1, int x2, int y2,int x3, int y3){
+        Polygon poly = new Polygon();
+        poly.addPoint(x1,y1);
+        poly.addPoint(x2,y2);
+        poly.addPoint(x3,y3);
+
+        g.drawPolygon(poly);
+
     }
 
 }
