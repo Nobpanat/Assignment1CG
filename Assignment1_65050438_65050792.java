@@ -32,6 +32,10 @@ public class Assignment1_65050438_65050792 extends JPanel {
         Color redShadowInDragon = new Color(195, 43, 102);
         Color yellowInheadDragon = new Color(255, 209, 165);
         Color lightShadowInDragon = new Color(255, 198, 207);
+        Color wingShadow = new Color(195, 146, 149);
+        Color wingandfat = new Color(254, 209, 165);
+        Color fireout = new Color(243, 56, 47);
+        Color firein = new Color(255, 209, 95);
 
         // branch nite ----------------------------------------------------------------
         g2.setColor(Color.BLACK);
@@ -290,7 +294,6 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 313, 309, 307, 312, 306, 311);
         bezierCurve(g2, 306, 311, 303, 311, 298, 309);
 
-
         // ขอบหน้า แดงเข้ม
         g2.setColor(regInDragon);
 
@@ -336,15 +339,17 @@ public class Assignment1_65050438_65050792 extends JPanel {
 
         bezierCurve(g2, 356, 130, 385, 120, 382, 80);
 
-
         // M branch-----------------------
+
+        g2.setColor(darkBlueEage);
+        setPlotSize(3);
 
         // Right Wing
         bezierCurve(g2, 359, 313, 397, 315, 411, 298);
         bezierCurve(g2, 411, 298, 390, 275, 438, 294);
         bezierCurve(g2, 438, 294, 473, 326, 472, 344);
         bezierCurve(g2, 472, 344, 439, 307, 425, 312);
-        bezierCurve(g2, 425, 312, 397, 334, 364, 323);
+        // bezierCurve(g2, 425, 312, 397, 334, 364, 323);
         bresenhamLine(g2, 364, 323, 359, 313);
         bezierCurve(g2, 425, 312, 397, 334, 364, 323);
         bezierCurve(g2, 364, 323, 361, 327, 384, 357);
@@ -354,11 +359,20 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 445, 371, 436, 361, 401, 366);
         bezierCurve(g2, 445, 371, 448, 349, 473, 343);
 
-        bezierCurve(g2, 455, 327, 442, 327, 440, 341);
-        bezierCurve(g2, 440, 341, 426, 326, 416, 344);
-        bezierCurve(g2, 416, 344, 412, 332, 386, 333);
-        bezierCurve(g2, 386, 333, 366, 329, 363, 326);
+        g2.setColor(wingShadow);
+        setPlotSize(1);
 
+        // bezierCurve(g2, 455, 327, 442, 327, 440, 341);
+        // bezierCurve(g2, 440, 341, 426, 326, 416, 344);
+        // bezierCurve(g2, 416, 344, 412, 332, 386, 333);
+        // bezierCurve(g2, 386, 333, 366, 329, 363, 326);
+
+        bezierCurve(g2, 370, 332, 416, 331, 410, 347);
+        bezierCurve(g2, 440, 345, 424, 326, 418, 343);
+        bezierCurve(g2, 442, 343, 447, 329, 457, 332);
+
+        g2.setColor(darkBlueEage);
+        setPlotSize(3);
         // Tail
         bezierCurve(g2, 384, 357, 400, 391, 394, 407);
         bresenhamLine(g2, 394, 407, 410, 416);
@@ -377,8 +391,12 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 393, 447, 393, 422, 388, 420);
         bezierCurve(g2, 388, 420, 398, 408, 397, 406);
 
+        g2.setColor(wingandfat);
+        setPlotSize(1);
         bezierCurve(g2, 437, 506, 462, 478, 394, 443);
-        bresenhamLine(g2, 394, 443, 391, 442);
+
+        g2.setColor(darkBlueEage);
+        setPlotSize(3);
 
         // Leg
         bezierCurve(g2, 394, 465, 361, 479, 335, 461);
@@ -396,11 +414,17 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 222, 375, 226, 357, 244, 337);
         bezierCurve(g2, 244, 337, 256, 316, 255, 314);
 
-        bezierCurve(g2, 355, 463, 347, 461, 348, 439);
-        bezierCurve(g2, 348, 439, 337, 444, 337, 445);
-        bezierCurve(g2, 337, 445, 316, 458, 274, 444);
-        bezierCurve(g2, 274, 444, 264, 439, 264, 438);
-        bezierCurve(g2, 264, 438, 267, 463, 259, 461);
+        g2.setColor(redShadowInDragon);
+        setPlotSize(1);
+
+        bezierCurve(g2, 354, 461, 346, 462, 349, 438);
+        bresenhamLine(g2, 349, 438, 342, 442);
+        bezierCurve(g2, 338, 444, 309, 458, 275, 444);
+        bezierCurve(g2, 259, 461, 265, 462, 264, 438);
+        bresenhamLine(g2, 264, 438, 274, 441);
+
+        g2.setColor(darkBlueEage);
+        setPlotSize(3);
 
         // Left wing
         bezierCurve(g2, 255, 314, 210, 315, 200, 296);
@@ -415,12 +439,15 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 168, 370, 157, 341, 138, 346);
         // bresenhamLine(g2, 138, 346, 141, 343);
         // bezierCurve(g2, 255, 314, 306, 336, 361, 312);
+        g2.setColor(wingShadow);
+        setPlotSize(1);
 
-        bezierCurve(g2, 252, 324, 241, 332, 221, 333);
-        bezierCurve(g2, 221, 333, 206, 330, 198, 345);
-        bezierCurve(g2, 198, 345, 185, 320, 173, 347);
-        bezierCurve(g2, 173, 347, 175, 325, 158, 328);
+        bezierCurve(g2, 245, 331, 195, 334, 201, 346);
+        bezierCurve(g2, 195, 344, 193, 323, 174, 344);
+        bezierCurve(g2, 171, 340, 172, 325, 158, 331);
 
+        g2.setColor(darkBlueEage);
+        setPlotSize(3);
         // Fire
         bezierCurve(g2, 305, 318, 303, 363, 293, 358);
         bezierCurve(g2, 293, 358, 288, 358, 287, 349);
@@ -430,31 +457,58 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 326, 350, 319, 368, 311, 348);
         bezierCurve(g2, 311, 348, 308, 346, 306, 317);
         bresenhamLine(g2, 306, 317, 305, 320);
+        
+        g2.setColor(firein);
+        setPlotSize(1);
+        bezierCurve(g2, 305, 356, 303, 376, 295, 368);
+        bezierCurve(g2, 295, 368, 292, 392, 309, 387);
+        bezierCurve(g2, 309, 387, 320, 383, 316, 368);
+        bezierCurve(g2, 316, 368, 310, 375, 306, 358);
+        bresenhamLine(g2, 306, 358, 305, 356);
+
+        g2.setColor(darkBlueEage);
+        setPlotSize(3);
 
         // Fat
-        bezierCurve(g2, 353, 356, 341, 320, 340, 320);
-        bezierCurve(g2, 340, 320, 300, 328, 273, 320);
+        g2.setColor(wingandfat);
+        setPlotSize(1);
+        bezierCurve(g2, 353, 356, 341, 320, 340, 320);        
         bezierCurve(g2, 273, 320, 260, 355, 261, 357);
         bezierCurve(g2, 260, 415, 266, 440, 301, 442);
         bezierCurve(g2, 301, 442, 341, 447, 355, 415);
+
+        g2.setColor(darkBlueEage);
+        setPlotSize(3);
 
         // Right Hand
         bezierCurve(g2, 374, 411, 324, 424, 332, 387);
         bezierCurve(g2, 332, 387, 340, 346, 364, 362);
         bezierCurve(g2, 364, 362, 379, 372, 382, 380);
 
+        g2.setColor(redShadowInDragon);
+        setPlotSize(1);
+
         bezierCurve(g2, 394, 387, 384, 414, 343, 392);
+
+        g2.setColor(darkBlueEage);
+        setPlotSize(3);
+
         bezierCurve(g2, 343, 392, 331, 394, 330, 392);
         bezierCurve(g2, 374, 411, 324, 424, 332, 387);
         bezierCurve(g2, 332, 387, 340, 346, 364, 362);
         bezierCurve(g2, 395, 402, 383, 411, 372, 411);
 
         // Left Hand
+        g2.setColor(redShadowInDragon);
+        setPlotSize(1);
+        bezierCurve(g2, 222, 386, 226, 415, 274, 392);
+
+        g2.setColor(darkBlueEage);
+        setPlotSize(3);
+
         bezierCurve(g2, 231, 380, 260, 336, 276, 371);
         bezierCurve(g2, 276, 371, 293, 407, 267, 414);
         bezierCurve(g2, 267, 414, 243, 415, 239, 411);
-        bezierCurve(g2, 219, 386, 226, 415, 274, 392);
-
         bezierCurve(g2, 274, 392, 281, 395, 283, 393);
         bezierCurve(g2, 217, 401, 232, 413, 248, 414);
 
@@ -487,7 +541,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 249, 458, 244, 463, 246, 470);
         bezierCurve(g2, 246, 470, 241, 442, 230, 460);
         bezierCurve(g2, 230, 460, 228, 466, 229, 469);
-        bezierCurve(g2, 229, 469, 231, 446, 218, 456);
+        bezierCurve(g2, 229, 469, 231, 446, 214, 456);
         bresenhamLine(g2, 218, 456, 215, 459);
 
         // background --------------------------------------
@@ -536,7 +590,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bresenhamLine(g2, 165, 405, 42, 187);
 
         // หลายเหลี่ยมชิดตัวปีกขวามังกร
-        bresenhamLine(g2, 417,402,600,474);
+        bresenhamLine(g2, 417, 402, 600, 474);
 
         // polygon สามเหลี่ยม
         // createTrianglePolygon(g2, 10, 10, 30, 30, 25, 40);
@@ -571,16 +625,16 @@ public class Assignment1_65050438_65050792 extends JPanel {
 
         // สามเหลี่ยม10
         createTrianglePolygon(g2, 163, 405, 0, 506, 50, 600);
-        
+
         // สามเหลี่ยม11
         createTrianglePolygon(g2, 78, 600, 236, 600, 292, 498);
-        
+
         // สามเหลี่ยม12
         createTrianglePolygon(g2, 541, 181, 428, 0, 600, 0);
 
         // สามเหลี่ยม13
         createTrianglePolygon(g2, 541, 181, 600, 320, 600, 181);
-        
+
         // ลงสี
         // ลงสีหน้ามังกร
         buffer = floodFill(buffer, 259, 181, Color.WHITE, regInDragon);
@@ -625,13 +679,71 @@ public class Assignment1_65050438_65050792 extends JPanel {
         buffer = floodFill(buffer, 328, 137, Color.WHITE, lightShadowInDragon);
         buffer = floodFill(buffer, 369, 116, Color.WHITE, lightShadowInDragon);
 
-        //ลงสีจมูกและปาก
+        // ลงสีจมูกและปาก
         buffer = floodFill(buffer, 306, 269, Color.WHITE, darkBlueEage);
-        buffer = floodFill(buffer,298,281,Color.WHITE, darkBlueEage);
-        buffer = floodFill(buffer,314,281,Color.WHITE,darkBlueEage);
-        buffer = floodFill(buffer,310,299,Color.WHITE, darkBlueEage);
-        buffer = floodFill(buffer,305,307,Color.WHITE, regInDragon);
-        
+        buffer = floodFill(buffer, 298, 281, Color.WHITE, darkBlueEage);
+        buffer = floodFill(buffer, 314, 281, Color.WHITE, darkBlueEage);
+        buffer = floodFill(buffer, 310, 299, Color.WHITE, darkBlueEage);
+        buffer = floodFill(buffer, 305, 307, Color.WHITE, regInDragon);
+
+        // Wing Right
+        buffer = floodFill(buffer, 411, 330, Color.WHITE, wingShadow);
+        buffer = floodFill(buffer, 428, 330, Color.WHITE, wingShadow);
+        buffer = floodFill(buffer, 441, 326, Color.WHITE, wingShadow);
+        buffer = floodFill(buffer, 425, 345, Color.WHITE, wingandfat);
+        buffer = floodFill(buffer, 401, 345, Color.WHITE, wingandfat);
+        buffer = floodFill(buffer, 451, 345, Color.WHITE, wingandfat);
+        buffer = floodFill(buffer, 417, 300, Color.WHITE, regInDragon);
+
+        // Wing Left
+        buffer = floodFill(buffer, 172, 325, Color.WHITE, wingShadow);
+        buffer = floodFill(buffer, 186, 325, Color.WHITE, wingShadow);
+        buffer = floodFill(buffer, 207, 325, Color.WHITE, wingShadow);
+        buffer = floodFill(buffer, 158, 345, Color.WHITE, wingandfat);
+        buffer = floodFill(buffer, 186, 345, Color.WHITE, wingandfat);
+        buffer = floodFill(buffer, 207, 345, Color.WHITE, wingandfat);
+        buffer = floodFill(buffer, 183, 300, Color.WHITE, regInDragon);
+
+        // body
+        buffer = floodFill(buffer, 248, 382, Color.WHITE, regInDragon);
+        buffer = floodFill(buffer, 245, 425, Color.WHITE, regInDragon);
+        buffer = floodFill(buffer, 355, 335, Color.WHITE, regInDragon);
+
+        // Shadow in body
+        buffer = floodFill(buffer, 250, 404, Color.WHITE, redShadowInDragon);
+        buffer = floodFill(buffer, 350, 404, Color.WHITE, redShadowInDragon);
+        buffer = floodFill(buffer, 267, 452, Color.WHITE, redShadowInDragon);
+        buffer = floodFill(buffer, 282, 452, Color.WHITE, redShadowInDragon);
+        buffer = floodFill(buffer, 344, 452, Color.WHITE, redShadowInDragon);
+
+        // fat
+        buffer = floodFill(buffer, 300, 410, Color.WHITE, wingandfat);
+
+        // nail Left
+        buffer = floodFill(buffer, 263, 364, Color.WHITE, wingandfat);
+        buffer = floodFill(buffer, 270, 374, Color.WHITE, wingandfat);
+        buffer = floodFill(buffer, 275, 387, Color.WHITE, wingandfat);
+        buffer = floodFill(buffer, 235, 459, Color.WHITE, wingandfat);
+        buffer = floodFill(buffer, 223, 458, Color.WHITE, wingandfat);
+        buffer = floodFill(buffer, 252, 460, Color.WHITE, wingandfat);
+
+        // nail Right
+        buffer = floodFill(buffer, 351, 364, Color.WHITE, wingandfat);
+        buffer = floodFill(buffer, 341, 374, Color.WHITE, wingandfat);
+        buffer = floodFill(buffer, 336, 385, Color.WHITE, wingandfat);
+        buffer = floodFill(buffer, 360, 460, Color.WHITE, wingandfat);
+        buffer = floodFill(buffer, 375, 460, Color.WHITE, wingandfat);
+        buffer = floodFill(buffer, 388, 460, Color.WHITE, wingandfat);
+
+        // tail
+        buffer = floodFill(buffer, 410, 440, Color.WHITE, regInDragon);
+        buffer = floodFill(buffer, 410, 460, Color.WHITE, wingandfat);
+        buffer = floodFill(buffer, 418, 420, Color.WHITE, wingandfat);
+        buffer = floodFill(buffer, 443, 456, Color.WHITE, wingandfat);
+
+        // Fire
+        buffer = floodFill(buffer, 320, 365, Color.WHITE, fireout);
+        buffer = floodFill(buffer, 305, 372, Color.WHITE, firein);
 
         g.drawImage(buffer, 0, 0, null);
 
