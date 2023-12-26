@@ -55,6 +55,17 @@ public class Assignment1_65050438_65050792 extends JPanel {
         Color skyblueShade2 = new Color(167, 184, 219);
         Color orangeShade9 = new Color(241, 197, 194);
         Color eageLight = new Color(234, 245, 249);
+        Color navyShade1 = new Color(36,36,91);
+        Color navyShade2 = new Color(84,201,239);
+        Color navyShade3 = new Color(42,74,157);
+        Color navyShade4 = new Color(133,211,233);
+        Color navyShade5 = new Color(69,137,199);
+        Color navyShade6 = new Color(60,140,202);
+        Color o7 = new Color(241, 201, 186);
+        Color o8 = new Color(182,226,240);
+        Color o9 = new Color(217,238,247);
+        
+
 
         // branch nite ----------------------------------------------------------------
         g2.setColor(orangeShade9);
@@ -589,14 +600,16 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bresenhamLine(g2, 398, 0, 357, 122);
 
         // หลายเหลี่ยมชิดตัวขวาบนมังกร
-        bresenhamLine(g2, 399, 0, 427, 0);
-        bresenhamLine(g2, 427, 0, 542, 182);
-        bresenhamLine(g2, 542, 182, 417, 235);
+        // bresenhamLine(g2, 399, 0, 427, 0);
+        // bresenhamLine(g2, 427, 0, 542, 182);
+        g2.setColor(navyShade2);
+        bresenhamLine(g2, 542, 182, 420, 235);
 
-        // หลายเหลี่นมชิดตัวปีกขวามังกร
+        // หลายเหลี่ยมชิดตัวปีกขวามังกร
+        g2.setColor(navyShade4);
         bresenhamLine(g2, 541, 183, 464, 323);
         bresenhamLine(g2, 438, 368, 417, 402);
-        bresenhamLine(g2, 417, 402, 391, 379);
+        bresenhamLine(g2, 417, 402, 394, 379);
 
         // หลายเหลี่ยมชิดตัวด้านหลังมังกร
         g2.setColor(skyblueShade2);
@@ -612,9 +625,10 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bresenhamLine(g2, 405, 413, 416, 402);
 
         // หลายเหลี่ยมชิดตัวเท้าขวากับหางมังกร
+        g2.setColor(o8);
         bresenhamLine(g2, 290, 498, 507, 600);
         bresenhamLine(g2, 507, 600, 536, 600);
-        bresenhamLine(g2, 536, 600, 417, 402);
+        bresenhamLine(g2, 417, 403, 589, 600);
 
         // หลายเหลี่ยมชิดตัวเท้าซ้ายมังกร
         g2.setColor(orangeShade5);
@@ -625,7 +639,8 @@ public class Assignment1_65050438_65050792 extends JPanel {
         // หลายเหลี่ยมชิดตัวปีกซ้ายมังกร
         bresenhamLine(g2, 165, 405, 42, 187);
 
-        // หลายเหลี่ยมชิดตัวปีกขวามังกร
+        //เส้นเสริม
+        g2.setColor(navyShade5);
         bresenhamLine(g2, 417, 402, 600, 474);
 
         // polygon สามเหลี่ยม
@@ -658,7 +673,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
         createTrianglePolygon(g2, 43, 187, 0, 226, 0, 330);
 
         // สามเหลี่ยม8
-        g2.setColor(orangeShade4);
+        g2.setColor(orangeShade5);
         createTrianglePolygon(g2, 42, 187, 0, 332, 164, 405);
 
         // สามเหลี่ยม9
@@ -673,10 +688,13 @@ public class Assignment1_65050438_65050792 extends JPanel {
         createTrianglePolygon(g2, 78, 600, 236, 600, 292, 498);
 
         // สามเหลี่ยม12
+        g2.setColor(navyShade1);
         createTrianglePolygon(g2, 541, 181, 428, 0, 600, 0);
 
-        // สามเหลี่ยม13
+        // // สามเหลี่ยม13
+        g2.setColor(navyShade2);
         createTrianglePolygon(g2, 541, 181, 600, 320, 600, 181);
+
 
         // ลงสี
         // ลงสีหน้ามังกร
@@ -848,6 +866,20 @@ public class Assignment1_65050438_65050792 extends JPanel {
         buffer = floodFill(buffer, 344, 48, Color.WHITE, orangeShade9);
         buffer = floodFill(buffer, 354, 35, Color.WHITE, orangeShade9);
         buffer = floodFill(buffer, 354, 59, Color.WHITE, orangeShade9);
+
+        //ลงสีขวา
+        buffer = floodFill(buffer,534,41,Color.WHITE, navyShade1);
+        buffer = floodFill(buffer,438,101,Color.WHITE,navyShade2);
+        buffer = floodFill(buffer,578,131,Color.WHITE,navyShade3);
+        buffer = floodFill(buffer,461,259,Color.WHITE,navyShade4);
+        buffer = floodFill(buffer,415,380,Color.WHITE,navyShade4);
+        buffer = floodFill(buffer,523,360,Color.WHITE,navyShade5);
+        buffer = floodFill(buffer,587,242,Color.WHITE,navyShade2);
+        buffer = floodFill(buffer,385,567,Color.WHITE,o7);
+        buffer = floodFill(buffer,433,531,Color.WHITE,o8);
+        buffer = floodFill(buffer,537,526,Color.WHITE,o9);
+        buffer = floodFill(buffer,415,409,Color.WHITE,o8);
+
 
         g.drawImage(buffer, 0, 0, null);
 
