@@ -334,17 +334,19 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 398, 193, 385, 174, 386, 170);
         bezierCurve(g2, 386, 170, 415, 148, 393, 89);
 
-        bezierCurve(g2, 223, 86, 197, 146, 231, 170);
+        bezierCurve(g2, 223, 90, 197, 146, 231, 170);
         bresenhamLine(g2, 231, 170, 217, 193);
 
         // หน้าด้านใน สีขาว ซ้าย
-        bezierCurve(g2, 232, 80, 226, 115, 257, 131);
+        g2.setColor(lightShadowInDragon);
+        bezierCurve(g2, 232, 85, 226, 115, 257, 131);
 
         bezierCurve(g2, 303, 133, 262, 137, 248, 151);
         bezierCurve(g2, 248, 151, 291, 136, 299, 138);
         bresenhamLine(g2, 299, 138, 303, 133);
 
         // เขามังกรสีแหลือง ซ้าย
+        g2.setColor(yellowInheadDragon);
         bezierCurve(g2, 269, 118, 261, 129, 263, 134);
         bresenhamLine(g2, 263, 134, 273, 131);
         bezierCurve(g2, 273, 131, 267, 117, 269, 118);
@@ -353,13 +355,16 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 345, 117, 354, 131, 352, 135);
         bresenhamLine(g2, 352, 135, 342, 130);
         bezierCurve(g2, 342, 130, 345, 122, 345, 117);
+        
 
         // หน้าด้านในสีขาว ขวา
+        g2.setColor(lightShadowInDragon);
         bezierCurve(g2, 313, 133, 351, 136, 368, 152);
+
         bezierCurve(g2, 368, 152, 321, 134, 316, 139);
         bresenhamLine(g2, 316, 139, 313, 133);
 
-        bezierCurve(g2, 356, 130, 385, 120, 382, 80);
+        bezierCurve(g2, 359, 130, 385, 120, 383, 85);
 
         // M branch-----------------------
 
