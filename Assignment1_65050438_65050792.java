@@ -539,6 +539,9 @@ public class Assignment1_65050438_65050792 extends JPanel {
         // หลายเหลี่ยมชิดตัวปีกซ้ายมังกร
         bresenhamLine(g2, 165, 405, 42, 187);
 
+        // หลายเหลี่ยมชิดตัวปีกขวามังกร
+        bresenhamLine(g2, 417,402,600,474);
+
         // polygon สามเหลี่ยม
         // createTrianglePolygon(g2, 10, 10, 30, 30, 25, 40);
         // createTrianglePolygon(g2, 60, 60, 80, 90, 75, 100);
@@ -575,6 +578,13 @@ public class Assignment1_65050438_65050792 extends JPanel {
 
         // สามเหลี่ยม11
         createTrianglePolygon(g2, 78, 600, 236, 600, 292, 498);
+
+        // สามเหลี่ยม12
+        createTrianglePolygon(g2, 541, 181, 428, 0, 600, 0);
+
+        // สามเหลี่ยม13
+        createTrianglePolygon(g2, 541, 181, 600, 320, 600, 181);
+        
 
         g.drawImage(buffer, 0, 0, null);
 
