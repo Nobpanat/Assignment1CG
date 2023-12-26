@@ -271,12 +271,10 @@ public class Assignment1_65050438_65050792 extends JPanel {
         // bezierCurve(g2, 306, 267, 322, 268, 327, 274);
         // bezierCurve(g2, 327, 274, 308, 270, 306, 271);
         // bezierCurve(g2, 306, 271, 285, 273, 284, 275);
-        bezierCurve(g2, 328,277,309, 267 , 283 , 277);
-bezierCurve(g2, 283,277,281, 270 , 306 , 264);
-bezierCurve(g2, 306,264,327, 268 , 329 , 277);
-bresenhamLine(g2, 329,277,328,277);
-
-        
+        bezierCurve(g2, 328, 277, 309, 267, 283, 277);
+        bezierCurve(g2, 283, 277, 281, 270, 306, 264);
+        bezierCurve(g2, 306, 264, 327, 268, 329, 277);
+        bresenhamLine(g2, 329, 277, 328, 277);
 
         // จมูกซ้าย
         bezierCurve(g2, 292, 279, 298, 281, 297, 284);
