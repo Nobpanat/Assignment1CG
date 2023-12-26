@@ -36,31 +36,28 @@ public class Assignment1_65050438_65050792 extends JPanel {
         Color wingandfat = new Color(254, 209, 165);
         Color fireout = new Color(243, 56, 47);
         Color firein = new Color(255, 209, 95);
-        Color redShade1 = new Color(230,34,103);
-        Color redShade2 = new Color(236,56,150);
-        Color redShade3 = new Color(235,64,150);
-        Color redShade4 = new Color(232,131,182);
-        Color redShade5 = new Color(237,78,113);
-        Color orangeShade1 = new Color(241,113,95);
-        Color orangeShade2 = new Color(245,132,82);
-        Color orangeShade3 = new Color(238,76,37);
-        Color orangeShade4 = new Color(236,54,39);
-        Color orangeShade5 = new Color(239,85,40);
-        Color orangeShade6 = new Color(246,146,74);
-        Color orangeShade7 = new Color(241,115,41);
-        Color orangeShade8 = new Color(244,130,117);
-        Color skyblueShade1 = new Color(62,88,165);
-        Color pinkShade1 = new Color(145,90,163);
-        Color pinkShade2 = new Color(205,124,178);
-        Color skyblueShade2 = new Color(167,184,219);
-        Color orangeShade9 = new Color(241,197,194);
-
-
-
-
+        Color redShade1 = new Color(230, 34, 103);
+        Color redShade2 = new Color(236, 56, 150);
+        Color redShade3 = new Color(235, 64, 150);
+        Color redShade4 = new Color(232, 131, 182);
+        Color redShade5 = new Color(237, 78, 113);
+        Color orangeShade1 = new Color(241, 113, 95);
+        Color orangeShade2 = new Color(245, 132, 82);
+        Color orangeShade3 = new Color(238, 76, 37);
+        Color orangeShade4 = new Color(236, 54, 39);
+        Color orangeShade5 = new Color(239, 85, 40);
+        Color orangeShade6 = new Color(246, 146, 74);
+        Color orangeShade7 = new Color(241, 115, 41);
+        Color orangeShade8 = new Color(244, 130, 117);
+        Color skyblueShade1 = new Color(62, 88, 165);
+        Color pinkShade1 = new Color(145, 90, 163);
+        Color pinkShade2 = new Color(205, 124, 178);
+        Color skyblueShade2 = new Color(167, 184, 219);
+        Color orangeShade9 = new Color(241, 197, 194);
+        Color eageLight = new Color(234, 245, 249);
 
         // branch nite ----------------------------------------------------------------
-        g2.setColor(Color.BLACK);
+        g2.setColor(orangeShade9);
         // 2024 เส้นตรง
         // เลข 2
         bresenhamLine(g2, 239, 24, 261, 24);
@@ -293,12 +290,10 @@ public class Assignment1_65050438_65050792 extends JPanel {
         // bezierCurve(g2, 306, 267, 322, 268, 327, 274);
         // bezierCurve(g2, 327, 274, 308, 270, 306, 271);
         // bezierCurve(g2, 306, 271, 285, 273, 284, 275);
-        bezierCurve(g2, 328,277,309, 267 , 283 , 277);
-bezierCurve(g2, 283,277,281, 270 , 306 , 264);
-bezierCurve(g2, 306,264,327, 268 , 329 , 277);
-bresenhamLine(g2, 329,277,328,277);
-
-        
+        bezierCurve(g2, 328, 277, 309, 267, 283, 277);
+        bezierCurve(g2, 283, 277, 281, 270, 306, 264);
+        bezierCurve(g2, 306, 264, 327, 268, 329, 277);
+        bresenhamLine(g2, 329, 277, 328, 277);
 
         // จมูกซ้าย
         bezierCurve(g2, 292, 279, 298, 281, 297, 284);
@@ -326,19 +321,19 @@ bresenhamLine(g2, 329,277,328,277);
         // ขอบหน้า แดงเข้ม
         g2.setColor(regInDragon);
 
-        bezierCurve(g2, 200, 212, 202, 234, 215, 248);
-        bezierCurve(g2, 215, 248, 203, 245, 203, 247);
+        bezierCurve(g2, 200, 213, 202, 234, 215, 248);
+        bezierCurve(g2, 215, 248, 203, 245, 205, 247);
 
-        bezierCurve(g2, 191, 252, 211, 268, 218, 268);
+        bezierCurve(g2, 194, 252, 211, 268, 218, 268);
         bezierCurve(g2, 218, 268, 242, 304, 289, 307);
 
         bezierCurve(g2, 323, 307, 371, 305, 396, 268);
-        bezierCurve(g2, 396, 268, 420, 262, 420, 250);
+        bezierCurve(g2, 396, 268, 420, 262, 420, 253);
 
         bezierCurve(g2, 411, 246, 400, 248, 400, 246);
-        bezierCurve(g2, 400, 246, 414, 233, 413, 211);
+        bezierCurve(g2, 400, 246, 414, 233, 413, 215);
 
-        bezierCurve(g2, 398, 193, 385, 174, 386, 170);
+        bezierCurve(g2, 395, 191, 385, 174, 386, 170);
         bezierCurve(g2, 386, 170, 415, 148, 393, 89);
 
         bezierCurve(g2, 223, 90, 197, 146, 231, 170);
@@ -362,7 +357,6 @@ bresenhamLine(g2, 329,277,328,277);
         bezierCurve(g2, 345, 117, 354, 131, 352, 135);
         bresenhamLine(g2, 352, 135, 342, 130);
         bezierCurve(g2, 342, 130, 345, 122, 345, 117);
-        
 
         // หน้าด้านในสีขาว ขวา
         g2.setColor(lightShadowInDragon);
@@ -579,13 +573,18 @@ bresenhamLine(g2, 329,277,328,277);
         bresenhamLine(g2, 218, 456, 215, 459);
 
         // background --------------------------------------
+        setPlotSize(1);
         // หลายเหลี่ยมชิดตัวซ้ายบนมังกร
+        g2.setColor(redShade2);
         bresenhamLine(g2, 43, 186, 150, 0);
         bresenhamLine(g2, 150, 0, 176, 0);
+        g2.setColor(pinkShade1);
         bresenhamLine(g2, 176, 0, 216, 99);
+        // g2.setColor(redShade2);
         bresenhamLine(g2, 43, 186, 196, 252);
 
         // หลายเหลี่ยมชิดตัวบนหัวมังกร
+        g2.setColor(skyblueShade1);
         bresenhamLine(g2, 177, 0, 398, 0);
         bresenhamLine(g2, 398, 0, 357, 122);
 
@@ -600,11 +599,13 @@ bresenhamLine(g2, 329,277,328,277);
         bresenhamLine(g2, 417, 402, 391, 379);
 
         // หลายเหลี่ยมชิดตัวด้านหลังมังกร
+        g2.setColor(skyblueShade2);
         bresenhamLine(g2, 418, 402, 397, 402);
         bresenhamLine(g2, 218, 403, 164, 403);
         bresenhamLine(g2, 164, 403, 205, 366);
 
         // หลายเหลี่ยมชิดตัวขามังกร
+        g2.setColor(orangeShade9);
         bresenhamLine(g2, 164, 405, 220, 446);
         bresenhamLine(g2, 253, 470, 292, 498);
         bresenhamLine(g2, 292, 498, 338, 462);
@@ -615,7 +616,8 @@ bresenhamLine(g2, 329,277,328,277);
         bresenhamLine(g2, 507, 600, 536, 600);
         bresenhamLine(g2, 536, 600, 417, 402);
 
-        // หลายเหลี่นมชิดตัวเท้าซ้ายมังกร
+        // หลายเหลี่ยมชิดตัวเท้าซ้ายมังกร
+        g2.setColor(orangeShade5);
         bresenhamLine(g2, 165, 405, 51, 600);
         bresenhamLine(g2, 51, 600, 78, 600);
         bresenhamLine(g2, 78, 600, 292, 498);
@@ -627,40 +629,47 @@ bresenhamLine(g2, 329,277,328,277);
         bresenhamLine(g2, 417, 402, 600, 474);
 
         // polygon สามเหลี่ยม
-        // createTrianglePolygon(g2, 10, 10, 30, 30, 25, 40);
-        // createTrianglePolygon(g2, 60, 60, 80, 90, 75, 100);
 
         // สามเหลี่ยม1
+        setPlotSize(1);
+        g2.setColor(redShade1);
         createTrianglePolygon(g2, 0, 0, 103, 0, 0, 47);
 
         // สามเหลี่ยม2
-        createTrianglePolygon(g2, 103, 0, 0, 48, 150, 0);
+        // g2.setColor
+        // createTrianglePolygon(g2, 103, 0, 0, 48, 150, 0);
 
         // สามเหลี่ยม3
-        createTrianglePolygon(g2, 0, 47, 151, 0, 43, 185);
+        // createTrianglePolygon(g2, 0, 47, 151, 0, 43, 185);
 
         // สามเหลี่ยม4
-        createTrianglePolygon(g2, 0, 47, 42, 186, 0, 148);
+        // createTrianglePolygon(g2, 0, 47, 42, 186, 0, 148);
 
         // สามเหลี่ยม5
+        g2.setColor(redShade3);
         createTrianglePolygon(g2, 0, 148, 42, 186, 0, 186);
 
         // สามเหลี่ยม6
+        g2.setColor(orangeShade1);
         createTrianglePolygon(g2, 43, 187, 0, 187, 0, 227);
 
         // สามเหลี่ยม7
+        g2.setColor(orangeShade2);
         createTrianglePolygon(g2, 43, 187, 0, 226, 0, 330);
 
         // สามเหลี่ยม8
+        g2.setColor(orangeShade4);
         createTrianglePolygon(g2, 42, 187, 0, 332, 164, 405);
 
         // สามเหลี่ยม9
-        createTrianglePolygon(g2, 0, 331, 165, 405, 0, 506);
+        // createTrianglePolygon(g2, 0, 331, 165, 405, 0, 506);
 
         // สามเหลี่ยม10
-        createTrianglePolygon(g2, 163, 405, 0, 506, 50, 600);
+        g2.setColor(orangeShade5);
+        createTrianglePolygon(g2, 167, 403, 0, 506, 50, 600);
 
         // สามเหลี่ยม11
+        g2.setColor(orangeShade8);
         createTrianglePolygon(g2, 78, 600, 236, 600, 292, 498);
 
         // สามเหลี่ยม12
@@ -778,40 +787,67 @@ bresenhamLine(g2, 329,277,328,277);
         // Fire
         buffer = floodFill(buffer, 320, 365, Color.WHITE, fireout);
         buffer = floodFill(buffer, 305, 372, Color.WHITE, firein);
-        buffer = floodFill(buffer,298,281,Color.WHITE, darkBlueEage);
-        buffer = floodFill(buffer,314,281,Color.WHITE,darkBlueEage);
-        buffer = floodFill(buffer,310,299,Color.WHITE, darkBlueEage);
-        buffer = floodFill(buffer,305,307,Color.WHITE, regInDragon);
-        
-        //ลงสี polygon
-        //ลงสีbackground บนซ้าย
-        buffer = floodFill(buffer,20,11,Color.WHITE, redShade1);
+        buffer = floodFill(buffer, 298, 281, Color.WHITE, darkBlueEage);
+        buffer = floodFill(buffer, 314, 281, Color.WHITE, darkBlueEage);
+        buffer = floodFill(buffer, 310, 299, Color.WHITE, darkBlueEage);
+        buffer = floodFill(buffer, 305, 307, Color.WHITE, regInDragon);
+
+        // ลงสี polygon
+        // ลงสีbackground บนซ้าย
+        buffer = floodFill(buffer, 20, 11, Color.WHITE, redShade1);
         buffer = floodFill(buffer, 98, 8, Color.WHITE, redShade2);
         buffer = floodFill(buffer, 7, 104, Color.WHITE, redShade3);
         buffer = floodFill(buffer, 83, 85, Color.WHITE, redShade4);
-        buffer = floodFill(buffer,14,173,Color.WHITE, redShade5);
+        buffer = floodFill(buffer, 14, 173, Color.WHITE, redShade5);
 
-        //orange
-        buffer = floodFill(buffer,15,200,Color.WHITE, orangeShade1);
-        buffer = floodFill(buffer,9,256,Color.WHITE,orangeShade2);
-        buffer = floodFill(buffer,67,292,Color.WHITE,orangeShade3);
-        buffer = floodFill(buffer,27,442,Color.WHITE,orangeShade4);
-        buffer = floodFill(buffer,72,507,Color.WHITE,orangeShade5);
-        buffer = floodFill(buffer,12,576,Color.WHITE,orangeShade6);
-        buffer = floodFill(buffer,110,548,Color.WHITE,orangeShade7);
-        buffer = floodFill(buffer, 189, 580,Color.WHITE, orangeShade8);
+        // orange
+        buffer = floodFill(buffer, 15, 200, Color.WHITE, orangeShade1);
+        buffer = floodFill(buffer, 9, 256, Color.WHITE, orangeShade2);
+        buffer = floodFill(buffer, 67, 292, Color.WHITE, orangeShade3);
+        buffer = floodFill(buffer, 27, 442, Color.WHITE, orangeShade4);
+        buffer = floodFill(buffer, 72, 507, Color.WHITE, orangeShade5);
+        buffer = floodFill(buffer, 12, 576, Color.WHITE, orangeShade6);
+        buffer = floodFill(buffer, 110, 548, Color.WHITE, orangeShade7);
+        buffer = floodFill(buffer, 189, 580, Color.WHITE, orangeShade8);
 
-        //backgroundหัวและข้างลำตัว
-        buffer = floodFill(buffer,218,18,Color.WHITE,skyblueShade1);
-        buffer = floodFill(buffer,157,103,Color.WHITE,pinkShade1);
-        buffer = floodFill(buffer,139,282,Color.WHITE,pinkShade2);
-        buffer = floodFill(buffer,204,382,Color.WHITE,skyblueShade2);
-        buffer = floodFill(buffer,400,395,Color.WHITE,skyblueShade2);
-        buffer = floodFill(buffer,204,417,Color.WHITE,orangeShade9);
-        buffer = floodFill(buffer,291,471,Color.WHITE,orangeShade9);
-        buffer = floodFill(buffer,405,404,Color.WHITE,orangeShade9);
+        // backgroundหัวและข้างลำตัว
+        buffer = floodFill(buffer, 218, 18, Color.WHITE, skyblueShade1);
+        buffer = floodFill(buffer, 157, 103, Color.WHITE, pinkShade1);
+        buffer = floodFill(buffer, 139, 282, Color.WHITE, pinkShade2);
+        buffer = floodFill(buffer, 204, 382, Color.WHITE, skyblueShade2);
+        buffer = floodFill(buffer, 400, 395, Color.WHITE, skyblueShade2);
+        buffer = floodFill(buffer, 204, 417, Color.WHITE, orangeShade9);
+        buffer = floodFill(buffer, 291, 471, Color.WHITE, orangeShade9);
+        buffer = floodFill(buffer, 405, 404, Color.WHITE, orangeShade9);
 
-        
+        // ลงสี2024
+        // ลงสี2
+        buffer = floodFill(buffer, 250, 26, Color.WHITE, orangeShade9);
+        buffer = floodFill(buffer, 260, 36, Color.WHITE, orangeShade9);
+        buffer = floodFill(buffer, 249, 48, Color.WHITE, orangeShade9);
+        buffer = floodFill(buffer, 240, 59, Color.WHITE, orangeShade9);
+        buffer = floodFill(buffer, 249, 70, Color.WHITE, orangeShade9);
+
+        // ลงสี0
+        buffer = floodFill(buffer, 281, 26, Color.WHITE, orangeShade9);
+        buffer = floodFill(buffer, 291, 37, Color.WHITE, orangeShade9);
+        buffer = floodFill(buffer, 291, 59, Color.WHITE, orangeShade9);
+        buffer = floodFill(buffer, 281, 70, Color.WHITE, orangeShade9);
+        buffer = floodFill(buffer, 271, 59, Color.WHITE, orangeShade9);
+        buffer = floodFill(buffer, 271, 37, Color.WHITE, orangeShade9);
+
+        // ลงสี2
+        buffer = floodFill(buffer, 313, 26, Color.WHITE, orangeShade9);
+        buffer = floodFill(buffer, 322, 36, Color.WHITE, orangeShade9);
+        buffer = floodFill(buffer, 313, 48, Color.WHITE, orangeShade9);
+        buffer = floodFill(buffer, 302, 60, Color.WHITE, orangeShade9);
+        buffer = floodFill(buffer, 312, 70, Color.WHITE, orangeShade9);
+
+        // ลงสี4
+        buffer = floodFill(buffer, 334, 36, Color.WHITE, orangeShade9);
+        buffer = floodFill(buffer, 344, 48, Color.WHITE, orangeShade9);
+        buffer = floodFill(buffer, 354, 35, Color.WHITE, orangeShade9);
+        buffer = floodFill(buffer, 354, 59, Color.WHITE, orangeShade9);
 
         g.drawImage(buffer, 0, 0, null);
 
