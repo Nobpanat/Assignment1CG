@@ -262,11 +262,6 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 350, 267, 340, 268, 336, 263);
         setPlotSize(1);
 
-        // test
-        // setPlotSize(2);
-        // buffer = floodFill(buffer, 259, 181, Color.WHITE, regInDragon);
-        // buffer = floodFill(buffer, 208, 155, regInDragon, redShadowInDragon);
-
         // จมูก
         bezierCurve(g2, 284, 275, 296, 266, 306, 267);
         bezierCurve(g2, 306, 267, 322, 268, 327, 274);
@@ -295,7 +290,10 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 313, 309, 307, 312, 306, 311);
         bezierCurve(g2, 306, 311, 303, 311, 298, 309);
 
+
         // ขอบหน้า แดงเข้ม
+        g2.setColor(regInDragon);
+
         bezierCurve(g2, 200, 212, 202, 234, 215, 248);
         bezierCurve(g2, 215, 248, 203, 245, 203, 247);
 
@@ -617,6 +615,13 @@ public class Assignment1_65050438_65050792 extends JPanel {
         buffer = floodFill(buffer, 286, 137, Color.WHITE, lightShadowInDragon);
         buffer = floodFill(buffer, 328, 137, Color.WHITE, lightShadowInDragon);
         buffer = floodFill(buffer, 369, 116, Color.WHITE, lightShadowInDragon);
+
+        //ลงสีจมูกและปาก
+        buffer = floodFill(buffer, 306, 269, Color.WHITE, darkBlueEage);
+        buffer = floodFill(buffer,298,281,Color.WHITE, darkBlueEage);
+        buffer = floodFill(buffer,314,281,Color.WHITE,darkBlueEage);
+        buffer = floodFill(buffer,310,299,Color.WHITE, darkBlueEage);
+        buffer = floodFill(buffer,305,307,Color.WHITE, regInDragon);
 
         g.drawImage(buffer, 0, 0, null);
 
