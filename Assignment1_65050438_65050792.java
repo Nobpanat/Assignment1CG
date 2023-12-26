@@ -638,7 +638,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
 
         // หลายเหลี่ยมชิดตัวปีกขวามังกร
         g2.setColor(blue4);
-       bresenhamLine(g2, 417, 402, 600, 474);
+        bresenhamLine(g2, 417, 402, 600, 474);
 
         // polygon สามเหลี่ยม
 
