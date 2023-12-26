@@ -25,9 +25,13 @@ public class Assignment1_65050438_65050792 extends JPanel {
         g2.fillRect(0, 0, 600, 600);
 
         // Design System Color
-        Color darkBlueEage = new Color(58, 2, 107);
-        Color darkBlueInEye = new Color(55, 0, 122);
-        Color lightBlueInEye = new Color(95, 48, 140);
+        Color darkBlueEage = new Color(58, 1, 118);
+        Color darkBlueInEye = new Color(58, 1, 118);
+        Color lightBlueInEye = new Color(88, 40, 139);
+        Color regInDragon = new Color(255, 62, 96);
+        Color redShadowInDragon = new Color(195, 43, 102);
+        Color yellowInheadDragon = new Color(255, 209, 165);
+        Color lightShadowInDragon = new Color(255, 198, 207);
 
         // branch nite ----------------------------------------------------------------
         g2.setColor(Color.BLACK);
@@ -223,12 +227,6 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 247, 260, 255, 268, 261, 267);
         bezierCurve(g2, 261, 267, 268, 269, 275, 264);
 
-        // ลงสีตาซ้ายด้านในโค้งสีน้ำเงินเข้ม
-        buffer = floodFill(buffer, 250, 226, Color.WHITE, darkBlueInEye);
-
-        // ลงสีตาซ้ายด้านในวงรี
-        buffer = floodFill(buffer, 257, 260, Color.WHITE, lightBlueInEye);
-
         // ตาขวา
         // ตาขวาขอบนอก
         g2.setColor(darkBlueEage);
@@ -264,12 +262,10 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 350, 267, 340, 268, 336, 263);
         setPlotSize(1);
 
-        // ลงสีตาขวาด้านในโค้งสีน้ำเงินเข้ม
-        buffer = floodFill(buffer, 360, 228, Color.WHITE, darkBlueInEye);
-        buffer = floodFill(buffer, 343, 272, Color.WHITE, darkBlueInEye);
-
-        // ลงสีตาซ้ายด้านในวงรี
-        buffer = floodFill(buffer, 349, 260, Color.WHITE, lightBlueInEye);
+        // test
+        // setPlotSize(2);
+        // buffer = floodFill(buffer, 259, 181, Color.WHITE, regInDragon);
+        // buffer = floodFill(buffer, 208, 155, regInDragon, redShadowInDragon);
 
         // จมูก
         bezierCurve(g2, 284, 275, 296, 266, 306, 267);
@@ -315,31 +311,33 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 398, 193, 385, 174, 386, 170);
         bezierCurve(g2, 386, 170, 415, 148, 393, 89);
 
-        bezierCurve(g2, 216, 193, 229, 173, 229, 170);
-        bezierCurve(g2, 229, 170, 199, 152, 221, 88);
+        bezierCurve(g2, 223, 86, 197, 146, 231, 170);
+        bresenhamLine(g2, 231, 170, 217, 193);
 
         // หน้าด้านใน สีขาว ซ้าย
         bezierCurve(g2, 232, 80, 226, 115, 257, 131);
 
-        bezierCurve(g2, 257, 142, 248, 150, 249, 151);
-        bezierCurve(g2, 249, 151, 289, 135, 299, 139);
-        bezierCurve(g2, 302, 134, 265, 138, 251, 148);
+        bezierCurve(g2, 303, 133, 262, 137, 248, 151);
+        bezierCurve(g2, 248, 151, 291, 136, 299, 138);
+        bresenhamLine(g2, 299, 138, 303, 133);
 
-        // หู สีแหลือง ซ้าย
-        bezierCurve(g2, 269, 118, 261, 128, 262, 134);
-        bresenhamLine(g2, 262, 134, 274, 131);
-        bezierCurve(g2, 274, 131, 269, 124, 269, 118);
+        // เขามังกรสีแหลือง ซ้าย
+        bezierCurve(g2, 269, 118, 261, 129, 263, 134);
+        bresenhamLine(g2, 263, 134, 273, 131);
+        bezierCurve(g2, 273, 131, 267, 117, 269, 118);
 
-        // หู สีเหลือง ขวา
-        bezierCurve(g2, 339, 131, 345, 122, 344, 118);
-        bezierCurve(g2, 344, 118, 354, 130, 352, 134);
-        bresenhamLine(g2, 352, 134, 339, 131);
+        // เขามังกรสีเหลือง ขวา
+        bezierCurve(g2, 345, 117, 354, 131, 352, 135);
+        bresenhamLine(g2, 352, 135, 342, 130);
+        bezierCurve(g2, 342, 130, 345, 122, 345, 117);
 
         // หน้าด้านในสีขาว ขวา
-        bezierCurve(g2, 312, 134, 349, 136, 367, 151);
-        bezierCurve(g2, 367, 151, 330, 137, 315, 139);
+        bezierCurve(g2, 313, 133, 351, 136, 368, 152);
+        bezierCurve(g2, 368, 152, 321, 134, 316, 139);
+        bresenhamLine(g2, 316, 139, 313, 133);
 
         bezierCurve(g2, 356, 130, 385, 120, 382, 80);
+
 
         // M branch-----------------------
 
@@ -575,6 +573,50 @@ public class Assignment1_65050438_65050792 extends JPanel {
 
         // สามเหลี่ยม11
         createTrianglePolygon(g2, 78, 600, 236, 600, 292, 498);
+
+        // ลงสี
+        // ลงสีหน้ามังกร
+        buffer = floodFill(buffer, 259, 181, Color.WHITE, regInDragon);
+
+        // ลงสีตาซ้ายด้านในโค้งสีน้ำเงินเข้ม
+        buffer = floodFill(buffer, 250, 226, Color.WHITE, darkBlueInEye);
+
+        // ลงสีตาซ้ายด้านในวงรี
+        buffer = floodFill(buffer, 257, 260, Color.WHITE, lightBlueInEye);
+
+        // ลงสีตาขวาด้านในโค้งสีน้ำเงินเข้ม
+        buffer = floodFill(buffer, 360, 228, Color.WHITE, darkBlueInEye);
+
+        // ลงสีตาซ้ายด้านในวงรี
+        buffer = floodFill(buffer, 349, 260, Color.WHITE, lightBlueInEye);
+
+        // ลงสีเหลืองบนหน้ามังกร
+        // ลงสีเขามังกร
+        buffer = floodFill(buffer, 266, 126, Color.WHITE, yellowInheadDragon);
+        buffer = floodFill(buffer, 346, 127, Color.WHITE, yellowInheadDragon);
+
+        // ลงสีหน้าผากมังกร
+        buffer = floodFill(buffer, 305, 145, Color.WHITE, yellowInheadDragon);
+        buffer = floodFill(buffer, 307, 182, Color.WHITE, yellowInheadDragon);
+        buffer = floodFill(buffer, 307, 218, Color.WHITE, yellowInheadDragon);
+
+        // ลงสีขอบเขามังกร
+        buffer = floodFill(buffer, 267, 136, Color.WHITE, darkBlueEage);
+        buffer = floodFill(buffer, 344, 134, Color.WHITE, darkBlueEage);
+
+        // ลงสีเงาขอบหน้ามังกร
+        buffer = floodFill(buffer, 207, 148, Color.WHITE, redShadowInDragon);
+        buffer = floodFill(buffer, 197, 224, Color.WHITE, redShadowInDragon);
+        buffer = floodFill(buffer, 236, 292, Color.WHITE, redShadowInDragon);
+        buffer = floodFill(buffer, 334, 312, Color.WHITE, redShadowInDragon);
+        buffer = floodFill(buffer, 416, 224, Color.WHITE, redShadowInDragon);
+        buffer = floodFill(buffer, 405, 153, Color.WHITE, redShadowInDragon);
+
+        // ลงสีเงาสว่างที่หัวมังกร
+        buffer = floodFill(buffer, 242, 115, Color.WHITE, lightShadowInDragon);
+        buffer = floodFill(buffer, 286, 137, Color.WHITE, lightShadowInDragon);
+        buffer = floodFill(buffer, 328, 137, Color.WHITE, lightShadowInDragon);
+        buffer = floodFill(buffer, 369, 116, Color.WHITE, lightShadowInDragon);
 
         g.drawImage(buffer, 0, 0, null);
 
