@@ -32,6 +32,28 @@ public class Assignment1_65050438_65050792 extends JPanel {
         Color redShadowInDragon = new Color(195, 43, 102);
         Color yellowInheadDragon = new Color(255, 209, 165);
         Color lightShadowInDragon = new Color(255, 198, 207);
+        Color redShade1 = new Color(230,34,103);
+        Color redShade2 = new Color(236,56,150);
+        Color redShade3 = new Color(235,64,150);
+        Color redShade4 = new Color(232,131,182);
+        Color redShade5 = new Color(237,78,113);
+        Color orangeShade1 = new Color(241,113,95);
+        Color orangeShade2 = new Color(245,132,82);
+        Color orangeShade3 = new Color(238,76,37);
+        Color orangeShade4 = new Color(236,54,39);
+        Color orangeShade5 = new Color(239,85,40);
+        Color orangeShade6 = new Color(246,146,74);
+        Color orangeShade7 = new Color(241,115,41);
+        Color orangeShade8 = new Color(244,130,117);
+        Color skyblueShade1 = new Color(62,88,165);
+        Color pinkShade1 = new Color(145,90,163);
+        Color pinkShade2 = new Color(205,124,178);
+        Color skyblueShade2 = new Color(167,184,219);
+        Color orangeShade9 = new Color(241,197,194);
+
+
+
+
 
         // branch nite ----------------------------------------------------------------
         g2.setColor(Color.BLACK);
@@ -631,6 +653,35 @@ public class Assignment1_65050438_65050792 extends JPanel {
         buffer = floodFill(buffer,314,281,Color.WHITE,darkBlueEage);
         buffer = floodFill(buffer,310,299,Color.WHITE, darkBlueEage);
         buffer = floodFill(buffer,305,307,Color.WHITE, regInDragon);
+        
+        //ลงสี polygon
+        //ลงสีbackground บนซ้าย
+        buffer = floodFill(buffer,20,11,Color.WHITE, redShade1);
+        buffer = floodFill(buffer, 98, 8, Color.WHITE, redShade2);
+        buffer = floodFill(buffer, 7, 104, Color.WHITE, redShade3);
+        buffer = floodFill(buffer, 83, 85, Color.WHITE, redShade4);
+        buffer = floodFill(buffer,14,173,Color.WHITE, redShade5);
+
+        //orange
+        buffer = floodFill(buffer,15,200,Color.WHITE, orangeShade1);
+        buffer = floodFill(buffer,9,256,Color.WHITE,orangeShade2);
+        buffer = floodFill(buffer,67,292,Color.WHITE,orangeShade3);
+        buffer = floodFill(buffer,27,442,Color.WHITE,orangeShade4);
+        buffer = floodFill(buffer,72,507,Color.WHITE,orangeShade5);
+        buffer = floodFill(buffer,12,576,Color.WHITE,orangeShade6);
+        buffer = floodFill(buffer,110,548,Color.WHITE,orangeShade7);
+        buffer = floodFill(buffer, 189, 580,Color.WHITE, orangeShade8);
+
+        //backgroundหัวและข้างลำตัว
+        buffer = floodFill(buffer,218,18,Color.WHITE,skyblueShade1);
+        buffer = floodFill(buffer,157,103,Color.WHITE,pinkShade1);
+        buffer = floodFill(buffer,139,282,Color.WHITE,pinkShade2);
+        buffer = floodFill(buffer,204,382,Color.WHITE,skyblueShade2);
+        buffer = floodFill(buffer,400,395,Color.WHITE,skyblueShade2);
+        buffer = floodFill(buffer,204,417,Color.WHITE,orangeShade9);
+        buffer = floodFill(buffer,291,471,Color.WHITE,orangeShade9);
+        buffer = floodFill(buffer,405,404,Color.WHITE,orangeShade9);
+
         
 
         g.drawImage(buffer, 0, 0, null);
