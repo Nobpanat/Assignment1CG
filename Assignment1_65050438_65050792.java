@@ -55,6 +55,14 @@ public class Assignment1_65050438_65050792 extends JPanel {
         Color skyblueShade2 = new Color(167, 184, 219);
         Color orangeShade9 = new Color(241, 197, 194);
         Color eageLight = new Color(234, 245, 249);
+        Color blue1 = new Color(85, 200, 238);
+        Color blue2 = new Color(67, 142, 200);
+        Color blue3 = new Color(47, 81, 161);
+        Color purple1 = new Color(200, 127, 179);
+        Color blue4 = new Color(67, 118, 185);
+        Color blue5 = new Color(173, 223, 238);
+        Color blue6 = new Color(57, 90, 167);
+        Color purple2 = new Color(109, 129, 174);
 
         // branch nite ----------------------------------------------------------------
         g2.setColor(orangeShade9);
@@ -612,9 +620,12 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bresenhamLine(g2, 405, 413, 416, 402);
 
         // หลายเหลี่ยมชิดตัวเท้าขวากับหางมังกร
+        g2.setColor(purple1);
         bresenhamLine(g2, 290, 498, 507, 600);
-        bresenhamLine(g2, 507, 600, 536, 600);
-        bresenhamLine(g2, 536, 600, 417, 402);
+        g2.setColor(orangeShade9);
+        //bresenhamLine(g2, 507, 600, 536, 600);
+        g2.setColor(blue5);
+        //bresenhamLine(g2, 536, 600, 417, 402);
 
         // หลายเหลี่ยมชิดตัวเท้าซ้ายมังกร
         g2.setColor(orangeShade5);
@@ -626,7 +637,8 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bresenhamLine(g2, 165, 405, 42, 187);
 
         // หลายเหลี่ยมชิดตัวปีกขวามังกร
-        bresenhamLine(g2, 417, 402, 600, 474);
+        g2.setColor(blue4);
+       bresenhamLine(g2, 417, 402, 600, 474);
 
         // polygon สามเหลี่ยม
 
@@ -671,12 +683,31 @@ public class Assignment1_65050438_65050792 extends JPanel {
         // สามเหลี่ยม11
         g2.setColor(orangeShade8);
         createTrianglePolygon(g2, 78, 600, 236, 600, 292, 498);
-
+        
         // สามเหลี่ยม12
+        g2.setColor(blue1);
+        setPlotSize(1);
+       
         createTrianglePolygon(g2, 541, 181, 428, 0, 600, 0);
+        
 
         // สามเหลี่ยม13
+        g2.setColor(blue2);
+        setPlotSize(1);
         createTrianglePolygon(g2, 541, 181, 600, 320, 600, 181);
+
+
+        //Right triangle
+        buffer = floodFill(buffer, 484, 10, Color.WHITE, blue1);
+        buffer = floodFill(buffer, 579, 210, Color.WHITE, blue2);
+        buffer = floodFill(buffer, 578, 146, Color.WHITE, blue3);
+        buffer = floodFill(buffer, 532, 348, Color.WHITE, blue1);
+        buffer = floodFill(buffer, 388, 583, Color.WHITE, purple1);
+        buffer = floodFill(buffer, 462, 535, Color.WHITE, blue4);
+        buffer = floodFill(buffer, 530, 535, Color.WHITE, blue5);
+        buffer = floodFill(buffer, 455, 250, Color.WHITE, blue6);
+        buffer = floodFill(buffer, 415, 382, Color.WHITE, purple2);
+        buffer = floodFill(buffer, 423, 70, Color.WHITE, orangeShade1);
 
         // ลงสี
         // ลงสีหน้ามังกร
