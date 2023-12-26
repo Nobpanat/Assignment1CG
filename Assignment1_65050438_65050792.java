@@ -267,10 +267,16 @@ public class Assignment1_65050438_65050792 extends JPanel {
         setPlotSize(1);
 
         // จมูก
-        bezierCurve(g2, 284, 275, 296, 266, 306, 267);
-        bezierCurve(g2, 306, 267, 322, 268, 327, 274);
-        bezierCurve(g2, 327, 274, 308, 270, 306, 271);
-        bezierCurve(g2, 306, 271, 285, 273, 284, 275);
+        // bezierCurve(g2, 284, 275, 296, 266, 306, 267);
+        // bezierCurve(g2, 306, 267, 322, 268, 327, 274);
+        // bezierCurve(g2, 327, 274, 308, 270, 306, 271);
+        // bezierCurve(g2, 306, 271, 285, 273, 284, 275);
+        bezierCurve(g2, 328,277,309, 267 , 283 , 277);
+bezierCurve(g2, 283,277,281, 270 , 306 , 264);
+bezierCurve(g2, 306,264,327, 268 , 329 , 277);
+bresenhamLine(g2, 329,277,328,277);
+
+        
 
         // จมูกซ้าย
         bezierCurve(g2, 292, 279, 298, 281, 297, 284);
@@ -278,9 +284,10 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 300, 284, 300, 276, 292, 279);
 
         // จมูกขวา
-        bezierCurve(g2, 313, 284, 312, 277, 320, 278);
-        bezierCurve(g2, 320, 278, 314, 282, 316, 284);
-        bezierCurve(g2, 316, 284, 315, 284, 313, 284);
+        bezierCurve(g2, 313, 284, 311, 279, 320, 278);
+        bezierCurve(g2, 320, 278, 316, 280, 317, 284);
+        bezierCurve(g2, 317, 284, 317, 286, 314, 285);
+        bresenhamLine(g2, 314, 285, 313, 284);
 
         // ปาก
         bezierCurve(g2, 290, 292, 311, 296, 323, 292);
@@ -457,7 +464,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 326, 350, 319, 368, 311, 348);
         bezierCurve(g2, 311, 348, 308, 346, 306, 317);
         bresenhamLine(g2, 306, 317, 305, 320);
-        
+
         g2.setColor(firein);
         setPlotSize(1);
         bezierCurve(g2, 305, 356, 303, 376, 295, 368);
@@ -472,7 +479,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
         // Fat
         g2.setColor(wingandfat);
         setPlotSize(1);
-        bezierCurve(g2, 353, 356, 341, 320, 340, 320);        
+        bezierCurve(g2, 353, 356, 341, 320, 340, 320);
         bezierCurve(g2, 273, 320, 260, 355, 261, 357);
         bezierCurve(g2, 260, 415, 266, 440, 301, 442);
         bezierCurve(g2, 301, 442, 341, 447, 355, 415);
