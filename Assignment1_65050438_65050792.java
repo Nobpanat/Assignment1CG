@@ -11,7 +11,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
         Assignment1_65050438_65050792 assignment1 = new Assignment1_65050438_65050792();
         JFrame f = new JFrame();
         f.add(assignment1);
-        f.setTitle("Assignment1");
+        f.setTitle("Little Dragon and the World of Colors");
         f.setSize(600, 600);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setVisible(true);
@@ -54,13 +54,11 @@ public class Assignment1_65050438_65050792 extends JPanel {
         Color pinkShade2 = new Color(205, 124, 178);
         Color skyblueShade2 = new Color(167, 184, 219);
         Color orangeShade9 = new Color(241, 197, 194);
-        Color eageLight = new Color(234, 245, 249);
         Color navyShade1 = new Color(36,36,91);
         Color navyShade2 = new Color(84,201,239);
         Color navyShade3 = new Color(42,74,157);
         Color navyShade4 = new Color(133,211,233);
         Color navyShade5 = new Color(69,137,199);
-        Color navyShade6 = new Color(60,140,202);
         Color o7 = new Color(241, 201, 186);
         Color o8 = new Color(182,226,240);
         Color o9 = new Color(217,238,247);
@@ -297,10 +295,6 @@ public class Assignment1_65050438_65050792 extends JPanel {
         setPlotSize(1);
 
         // จมูก
-        // bezierCurve(g2, 284, 275, 296, 266, 306, 267);
-        // bezierCurve(g2, 306, 267, 322, 268, 327, 274);
-        // bezierCurve(g2, 327, 274, 308, 270, 306, 271);
-        // bezierCurve(g2, 306, 271, 285, 273, 284, 275);
         bezierCurve(g2, 328, 277, 309, 267, 283, 277);
         bezierCurve(g2, 283, 277, 281, 270, 306, 264);
         bezierCurve(g2, 306, 264, 327, 268, 329, 277);
@@ -401,11 +395,6 @@ public class Assignment1_65050438_65050792 extends JPanel {
         g2.setColor(wingShadow);
         setPlotSize(1);
 
-        // bezierCurve(g2, 455, 327, 442, 327, 440, 341);
-        // bezierCurve(g2, 440, 341, 426, 326, 416, 344);
-        // bezierCurve(g2, 416, 344, 412, 332, 386, 333);
-        // bezierCurve(g2, 386, 333, 366, 329, 363, 326);
-
         bezierCurve(g2, 370, 332, 416, 331, 410, 347);
         bezierCurve(g2, 440, 345, 424, 326, 418, 343);
         bezierCurve(g2, 442, 343, 447, 329, 457, 332);
@@ -476,8 +465,6 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bezierCurve(g2, 209, 367, 186, 359, 168, 370);
         bezierCurve(g2, 168, 370, 174, 317, 186, 311);
         bezierCurve(g2, 168, 370, 157, 341, 138, 346);
-        // bresenhamLine(g2, 138, 346, 141, 343);
-        // bezierCurve(g2, 255, 314, 306, 336, 361, 312);
         g2.setColor(wingShadow);
         setPlotSize(1);
 
@@ -487,6 +474,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
 
         g2.setColor(darkBlueEage);
         setPlotSize(3);
+
         // Fire
         bezierCurve(g2, 305, 318, 303, 363, 293, 358);
         bezierCurve(g2, 293, 358, 288, 358, 287, 349);
@@ -585,13 +573,13 @@ public class Assignment1_65050438_65050792 extends JPanel {
 
         // background --------------------------------------
         setPlotSize(1);
+
         // หลายเหลี่ยมชิดตัวซ้ายบนมังกร
         g2.setColor(redShade2);
         bresenhamLine(g2, 43, 186, 150, 0);
         bresenhamLine(g2, 150, 0, 176, 0);
         g2.setColor(pinkShade1);
         bresenhamLine(g2, 176, 0, 216, 99);
-        // g2.setColor(redShade2);
         bresenhamLine(g2, 43, 186, 196, 252);
 
         // หลายเหลี่ยมชิดตัวบนหัวมังกร
@@ -600,8 +588,6 @@ public class Assignment1_65050438_65050792 extends JPanel {
         bresenhamLine(g2, 398, 0, 357, 122);
 
         // หลายเหลี่ยมชิดตัวขวาบนมังกร
-        // bresenhamLine(g2, 399, 0, 427, 0);
-        // bresenhamLine(g2, 427, 0, 542, 182);
         g2.setColor(navyShade2);
         bresenhamLine(g2, 542, 182, 420, 235);
 
@@ -651,47 +637,34 @@ public class Assignment1_65050438_65050792 extends JPanel {
         createTrianglePolygon(g2, 0, 0, 103, 0, 0, 47);
 
         // สามเหลี่ยม2
-        // g2.setColor
-        // createTrianglePolygon(g2, 103, 0, 0, 48, 150, 0);
-
-        // สามเหลี่ยม3
-        // createTrianglePolygon(g2, 0, 47, 151, 0, 43, 185);
-
-        // สามเหลี่ยม4
-        // createTrianglePolygon(g2, 0, 47, 42, 186, 0, 148);
-
-        // สามเหลี่ยม5
         g2.setColor(redShade3);
         createTrianglePolygon(g2, 0, 148, 42, 186, 0, 186);
 
-        // สามเหลี่ยม6
+        // สามเหลี่ยม3
         g2.setColor(orangeShade1);
         createTrianglePolygon(g2, 43, 187, 0, 187, 0, 227);
 
-        // สามเหลี่ยม7
+        // สามเหลี่ยม4
         g2.setColor(orangeShade2);
         createTrianglePolygon(g2, 43, 187, 0, 226, 0, 330);
 
-        // สามเหลี่ยม8
+        // สามเหลี่ยม5
         g2.setColor(orangeShade5);
         createTrianglePolygon(g2, 42, 187, 0, 332, 164, 405);
 
-        // สามเหลี่ยม9
-        // createTrianglePolygon(g2, 0, 331, 165, 405, 0, 506);
-
-        // สามเหลี่ยม10
+        // สามเหลี่ยม6
         g2.setColor(orangeShade5);
         createTrianglePolygon(g2, 167, 403, 0, 506, 50, 600);
 
-        // สามเหลี่ยม11
+        // สามเหลี่ยม7
         g2.setColor(orangeShade8);
         createTrianglePolygon(g2, 78, 600, 236, 600, 292, 498);
 
-        // สามเหลี่ยม12
+        // สามเหลี่ยม8
         g2.setColor(navyShade1);
         createTrianglePolygon(g2, 541, 181, 428, 0, 600, 0);
 
-        // // สามเหลี่ยม13
+        // // สามเหลี่ยม9
         g2.setColor(navyShade2);
         createTrianglePolygon(g2, 541, 181, 600, 320, 600, 181);
 
@@ -867,7 +840,7 @@ public class Assignment1_65050438_65050792 extends JPanel {
         buffer = floodFill(buffer, 354, 35, Color.WHITE, orangeShade9);
         buffer = floodFill(buffer, 354, 59, Color.WHITE, orangeShade9);
 
-        //ลงสีขวา
+        //ลงสีpolygonซีกขวา
         buffer = floodFill(buffer,534,41,Color.WHITE, navyShade1);
         buffer = floodFill(buffer,438,101,Color.WHITE,navyShade2);
         buffer = floodFill(buffer,578,131,Color.WHITE,navyShade3);
